@@ -1446,3 +1446,82 @@ a[data-correo], a[data-telefono], a[data-linkedin] {
 @media (min-width: 900px) {
   .nosotros__grid { display: grid; grid-template-columns: 1fr minmax(0, 22rem); gap: clamp(2.5rem, 5vw, 4.5rem); align-items: start; }
 }
+
+/* 22 · FOTOGRAFÍA -------------------------------------------------------- */
+/* Toda imagen pasa por el mismo tratamiento: se dessatura y se tiñe de navy.
+   Así una foto cualquiera entra en la paleta de dos tintas en vez de meter un
+   tercer color, y el conjunto se lee como un sistema y no como un collage.
+   El manual pide pastilla navy bajo el logotipo sobre fotografía (regla 8);
+   aquí el navy es además el propio tinte. */
+
+.foto {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  isolation: isolate;
+}
+.foto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.08);
+}
+/* Tinte navy: convierte el gris en monocromo de marca */
+.foto::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--navy);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+.foto--banda { aspect-ratio: 21 / 9; }
+@media (max-width: 700px) { .foto--banda { aspect-ratio: 16 / 10; } }
+
+.foto__pie {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--acero);
+  margin-top: 0.9rem;
+}
+
+/* Fondo fotográfico del hero ---------------------------------------------
+   La imagen aporta profundidad; el velo navy garantiza que el texto siga
+   pasando AA. Se mide, no se estima. */
+
+.hero { position: relative; }
+.hero__fondo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.hero__fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  filter: grayscale(1) contrast(1.1);
+}
+.hero__fondo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--navy);
+  opacity: 0.88;
+}
+.hero > .wrap { position: relative; z-index: 1; }
+
+/* Filete inferior que ata la banda a la retícula del sitio */
+.hero::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: var(--filete-navy);
+  z-index: 2;
+}

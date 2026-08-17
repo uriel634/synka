@@ -120,6 +120,37 @@ que pide el manual: «Navy y teal. Nada más compite.»
 Arena sigue definida como token (`--arena`) y reservada para impresión y
 documento. El fondo del sitio es `--fondo-claro`.
 
+### Fotografía
+
+Tres imágenes, todas bajo el mismo tratamiento.
+
+| Imagen | Dónde | Origen |
+|---|---|---|
+| `uriel-520/1040.jpg` | Nosotros | **Real.** Retrato de dirección |
+| `estructura-900/1600.jpg` | Fondo del hero | Generada (arquitectura, sin personas ni texto) |
+| `documentacion-800/1400.jpg` | Banda en Método | Generada (documentos en retícula) |
+
+**Tratamiento unificado.** Toda foto pasa por `filter: grayscale(1) contrast(1.08)`
+más una capa navy en `mix-blend-mode: color`. El resultado es un monocromo de
+marca: la fotografía entra en la paleta de dos tintas en vez de introducir un
+tercer color, y el conjunto se lee como un sistema y no como un collage. Si
+mañana entra una foto nueva, se integra sola.
+
+**El velo del hero está medido, no estimado.** La foto va bajo navy al 88 %.
+Muestreando los píxeles reales de la imagen, el gris más claro es 247, lo que
+da un fondo de peor caso `rgb(30, 67, 94)`. Sobre él: titular blanco 10.4,
+párrafo `#8FB4C9` 4.72, eyebrow teal vivo 4.97. Todo AA, con el promedio real
+en 6.04. Si se cambia esa foto por una más clara hay que volver a medir: el
+margen del párrafo es de 0.22 puntos.
+
+Las imágenes generadas son **atmosféricas, no documentales**: arquitectura y
+materiales, sin personas, sin texto legible y sin nada que pueda leerse como
+«este es nuestro equipo» o «este es un cliente». La única fotografía que afirma
+algo es el retrato, y es real.
+
+Las dos del hero y de Método se comprimen agresivamente (calidad 34–40) porque
+van veladas o en escala de grises: el detalle fino no se percibe.
+
 ### Profundidad sin sombras
 
 Para que las secciones no leyeran como bloques planos de color se añadió
