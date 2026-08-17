@@ -410,9 +410,13 @@
       }
 
       if (CFG.endpointFormulario) {
+        /* Formspree: `Accept: application/json` es lo que evita que responda
+           con su página de gracias y devuelva JSON. `_subject` define el asunto
+           del correo que llega. */
+        datos._subject = 'Solicitud de diagnóstico — ' + (datos.empresa || datos.nombre || '');
         fetch(CFG.endpointFormulario, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(datos)
         }).then(function (r) { r.ok ? exito() : fallo('http_' + r.status); })
           .catch(function () { fallo('red'); });

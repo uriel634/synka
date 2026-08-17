@@ -1,8 +1,6 @@
 /* ============================================================================
    SYNKA — Configuración del sitio
    Único archivo que se edita para poner el sitio en producción.
-   No contiene credenciales reales: todos los identificadores están vacíos
-   y el sitio funciona sin ellos.
    ========================================================================== */
 
 window.SYNKA_CONFIG = {
@@ -10,27 +8,39 @@ window.SYNKA_CONFIG = {
   /* --- Dominio ---------------------------------------------------------- */
   sitio: 'https://synka.mx',
 
-  /* --- Contacto --------------------------------------------------------
-     Los valores de abajo son los placeholder del manual de marca.
-     Sustituir por los reales antes de publicar.                            */
-  correo: 'hola@synka.mx',
-  telefono: '',            // formato E.164, p. ej. '+525512345678'
-  whatsapp: '',            // solo dígitos, p. ej. '525512345678'
-                           // vacío => no se muestra el botón de WhatsApp
+  /* --- Contacto --------------------------------------------------------- */
+  correo: 'contacto@synka.mx',
+
+  // Formato E.164 para marcar. En México el "1" no se usa al llamar.
+  telefono: '+525520654337',
+
+  // Solo dígitos, para wa.me. Se conserva el "1" después del 52 porque es el
+  // formato que ya venía funcionando en el sitio anterior de VESTRA.
+  // Si el enlace fallara, quitar el 1: 525520654337.
+  whatsapp: '5215520654337',
+
   linkedin: '',            // p. ej. 'https://www.linkedin.com/company/synka'
 
   /* --- Analítica -------------------------------------------------------
-     Dejar vacío desactiva la carga. No se inyecta ningún script si no hay ID. */
+     Dejar vacío desactiva la carga: no se inyecta ningún script y el sitio
+     funciona igual. Los eventos se siguen acumulando en dataLayer, así que
+     al pegar el ID más adelante empieza a medir sin tocar nada más.         */
   gtmId: '',               // 'GTM-XXXXXXX'
   ga4Id: '',               // 'G-XXXXXXXXXX'
 
   /* --- Formulario ------------------------------------------------------
-     Endpoint que recibe el POST en JSON. Vacío => el formulario compone un
-     correo con los datos y lo abre en el cliente del usuario.
-     Para conectar un CRM, apuntar aquí a la función/webhook intermedia.      */
-  endpointFormulario: '',
+     Formspree. Crear el formulario en formspree.io, copiar el ID que aparece
+     en el endpoint (https://formspree.io/f/ESTE_ID) y pegarlo abajo.
+     Mientras esté vacío, el formulario compone un correo a `correo` y el
+     sitio nunca se queda sin vía de contacto.                               */
+  formspreeId: '',         // p. ej. 'xdorwkyz'
 
   /* --- Diagnóstico ------------------------------------------------------ */
   umbralMedio: 5,          // puntuación a partir de la cual el nivel es MEDIO
   umbralAlto: 11           // puntuación a partir de la cual el nivel es ALTO
 };
+
+/* El endpoint se arma solo a partir del ID. */
+window.SYNKA_CONFIG.endpointFormulario = window.SYNKA_CONFIG.formspreeId
+  ? 'https://formspree.io/f/' + window.SYNKA_CONFIG.formspreeId
+  : '';

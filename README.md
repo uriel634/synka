@@ -98,6 +98,39 @@ Estas no son decisiones de gusto: salen del manual y están fijadas en el CSS.
   IBM Plex Mono 400 para datos y eyebrows. Sustitución Arial Narrow / Arial,
   como manda el manual. Nunca Helvetica, Inter ni Roboto.
 
+### El fondo claro: gris frío en lugar de arena
+
+El manual fija Arena `#E8E3D9` como fondo de documento (26 % de la paleta), pero
+el sitio usa **`#EEF1F4`**, un gris muy claro y frío.
+
+No es una salida de marca: el capítulo 03 admite el isotipo bicolor «sobre
+blanco, arena o **gris muy claro**». Se eligió por tres razones concretas:
+
+1. El arena es cálido y tira a beige junto al navy. El gris frío acompaña al
+   navy en vez de competir con él, y lee más minimalista.
+2. Sube el contraste del acero de **4.41 (que no pasaba AA) a 4.97**. La paleta
+   dejó de necesitar excepciones.
+3. El retrato de dirección está tomado sobre concreto gris frío. Sobre arena
+   desentonaba; sobre este gris se integra.
+
+Como efecto, el texto de párrafo sobre fondo claro pasó de `#3A3730` (un
+marrón oscuro) a **navy**. El sitio quedó con dos tintas y nada más, que es lo
+que pide el manual: «Navy y teal. Nada más compite.»
+
+Arena sigue definida como token (`--arena`) y reservada para impresión y
+documento. El fondo del sitio es `--fondo-claro`.
+
+### Profundidad sin sombras
+
+Para que las secciones no leyeran como bloques planos de color se añadió
+`.seccion--signo`: mete el isotipo a gran escala, sangrado por el borde y al
+3.5–4.5 % de opacidad. Es la versión monocromática del manual —los dos brazos
+unidos en una punta continua—, así que no hay dibujo nuevo, va como data-URI
+(cero peticiones) y el logotipo en sí sigue plano, sin sombra ni degradado,
+como manda la regla 7.
+
+El retrato de dirección se enmarca en pastilla navy, en línea con la regla 8.
+
 ### Tres restricciones de contraste
 
 Auditadas sobre color renderizado, no sobre la teoría. Están comentadas en el CSS:

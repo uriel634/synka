@@ -249,7 +249,6 @@ PLANTILLA = """<!DOCTYPE html>
         <li><a class="nav__enlace" href="../index.html#problema">El problema</a></li>
         <li><a class="nav__enlace" href="../index.html#metodo">Método SYNKA</a></li>
         <li><a class="nav__enlace" href="../index.html#soluciones">Soluciones</a></li>
-        <li><a class="nav__enlace" href="../index.html#resultados">Resultados</a></li>
         <li><a class="nav__enlace" href="../index.html#nosotros">Nosotros</a></li>
         <li><a class="nav__enlace" href="../index.html#diagnostico">Diagnóstico</a></li>
       </ul>
@@ -268,7 +267,6 @@ PLANTILLA = """<!DOCTYPE html>
         <li><a href="../index.html#problema">El problema</a></li>
         <li><a href="../index.html#metodo">Método SYNKA</a></li>
         <li><a href="../index.html#soluciones">Soluciones</a></li>
-        <li><a href="../index.html#resultados">Resultados</a></li>
         <li><a href="../index.html#nosotros">Nosotros</a></li>
         <li><a href="../index.html#diagnostico">Diagnóstico</a></li>
       </ul>
@@ -383,7 +381,6 @@ PLANTILLA = """<!DOCTYPE html>
         <ul>
           <li><a href="../index.html#problema">El problema</a></li>
           <li><a href="../index.html#metodo">Método SYNKA</a></li>
-          <li><a href="../index.html#resultados">Resultados</a></li>
           <li><a href="../index.html#nosotros">Nosotros</a></li>
           <li><a href="../diagnostico/radar.html">Radar SYNKA</a></li>
           <li><a href="../diagnostico/comercial.html">Diagnóstico Comercial</a></li>

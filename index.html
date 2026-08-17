@@ -119,7 +119,6 @@
         <li><a class="nav__enlace" href="#problema">El problema</a></li>
         <li><a class="nav__enlace" href="#metodo">Método SYNKA</a></li>
         <li><a class="nav__enlace" href="#soluciones">Soluciones</a></li>
-        <li><a class="nav__enlace" href="#resultados">Resultados</a></li>
         <li><a class="nav__enlace" href="#nosotros">Nosotros</a></li>
         <li><a class="nav__enlace" href="#diagnostico">Diagnóstico</a></li>
       </ul>
@@ -139,7 +138,6 @@
         <li><a href="#problema">El problema</a></li>
         <li><a href="#metodo">Método SYNKA</a></li>
         <li><a href="#soluciones">Soluciones</a></li>
-        <li><a href="#resultados">Resultados</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#diagnostico">Diagnóstico</a></li>
       </ul>
@@ -219,7 +217,7 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════ TRANSFORMACIÓN ═══ -->
-<section class="seccion seccion--navy seccion--linea" id="transformacion">
+<section class="seccion seccion--navy seccion--linea seccion--signo" id="transformacion">
   <div class="wrap">
     <div class="encabezado-seccion">
       <p class="eyebrow">La transformación</p>
@@ -527,112 +525,69 @@
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════════════════ RESULTADOS ═══ -->
-<section class="seccion seccion--navy seccion--linea" id="resultados">
-  <div class="wrap">
-    <div class="encabezado-seccion">
-      <p class="eyebrow">Resultados</p>
-      <h2>Casos documentados</h2>
-      <p class="lead">Cada intervención se documenta con la misma estructura: qué estaba
-        pasando, qué se instaló y qué cambió. Publicamos casos solo con autorización del
-        cliente y con datos verificables.</p>
-    </div>
-
-    <div class="reticula reticula--3">
-      <!-- Estructura lista para poblar. No se publican cifras, testimonios,
-           logotipos ni porcentajes que no existan. -->
-      <article class="tarjeta caso aparece">
-        <p class="marcador">Caso 01 · Pendiente de publicación</p>
-        <div>
-          <dl>
-            <dt>Problema</dt>
-            <dd>Situación de partida documentada en el diagnóstico.</dd>
-          </dl>
-        </div>
-        <div>
-          <dl>
-            <dt>Intervención</dt>
-            <dd>Divisiones aplicadas y alcance del trabajo.</dd>
-          </dl>
-        </div>
-        <div>
-          <dl>
-            <dt>Resultado</dt>
-            <dd>Cambio observable al cierre de la implementación.</dd>
-          </dl>
-        </div>
-        <blockquote class="caso__testimonio">Testimonio del cliente, con nombre y cargo.</blockquote>
-      </article>
-
-      <article class="tarjeta caso aparece">
-        <p class="marcador">Caso 02 · Pendiente de publicación</p>
-        <div><dl><dt>Problema</dt><dd>Situación de partida documentada en el diagnóstico.</dd></dl></div>
-        <div><dl><dt>Intervención</dt><dd>Divisiones aplicadas y alcance del trabajo.</dd></dl></div>
-        <div><dl><dt>Resultado</dt><dd>Cambio observable al cierre de la implementación.</dd></dl></div>
-        <blockquote class="caso__testimonio">Testimonio del cliente, con nombre y cargo.</blockquote>
-      </article>
-
-      <article class="tarjeta caso aparece">
-        <p class="marcador">Caso 03 · Pendiente de publicación</p>
-        <div><dl><dt>Problema</dt><dd>Situación de partida documentada en el diagnóstico.</dd></dl></div>
-        <div><dl><dt>Intervención</dt><dd>Divisiones aplicadas y alcance del trabajo.</dd></dl></div>
-        <div><dl><dt>Resultado</dt><dd>Cambio observable al cierre de la implementación.</dd></dl></div>
-        <blockquote class="caso__testimonio">Testimonio del cliente, con nombre y cargo.</blockquote>
-      </article>
-    </div>
-
-    <p class="form__aviso" style="margin-top:2rem; color:var(--sobre-navy-2)">
-      Prefiriendo no publicar nada antes que publicar algo inventado, esta sección permanece
-      vacía hasta tener casos autorizados. Si quieres referencias directas, las damos en la
-      conversación.
-    </p>
-  </div>
-</section>
-
 <!-- ═════════════════════════════════════════════════════════ NOSOTROS ═══ -->
-<section class="seccion seccion--blanco" id="nosotros">
+<section class="seccion seccion--blanco seccion--signo" id="nosotros">
   <div class="wrap">
     <div class="encabezado-seccion">
       <p class="eyebrow">Sobre SYNKA</p>
       <h2>Creemos que una empresa no debería funcionar gracias a la memoria de su dueño</h2>
     </div>
 
-    <div class="reticula reticula--2" style="border:0; background:transparent; gap:clamp(2rem,5vw,4rem)">
-      <div style="background:transparent">
+    <div class="nosotros__grid">
+      <div>
         <p style="margin-bottom:1.25rem">Una empresa no debería funcionar gracias a la memoria,
           la experiencia o la presencia permanente de su dueño. Debe funcionar gracias a sistemas.</p>
         <p style="margin-bottom:1.25rem">SYNKA viene de sincronizar. No representa orden ni jerarquía:
           representa coordinación. Personas, procesos, ventas, operación y control funcionando
           como un solo sistema.</p>
-        <p>Casi todas las firmas del sector ocupan el territorio del orden: rejillas, columnas,
-          pirámides. Eso comunica rigidez, no explica por qué la empresa funcionaría sin el dueño.
-          Nosotros trabajamos el territorio de la coordinación: partes que se mueven a la vez
-          sin que nadie las empuje.</p>
+        <p style="margin-bottom:clamp(2rem,4vw,2.75rem)">Casi todas las firmas del sector ocupan el
+          territorio del orden: rejillas, columnas, pirámides. Eso comunica rigidez, no explica por
+          qué la empresa funcionaría sin el dueño. Nosotros trabajamos el territorio de la
+          coordinación: partes que se mueven a la vez sin que nadie las empuje.</p>
+
+        <div class="reticula reticula--2">
+          <div class="tarjeta aparece">
+            <h3>No decimos cómo administrar tu empresa</h3>
+            <p>SYNKA no llega a opinar sobre tu negocio. Llega a construir el sistema que
+              hace que tu negocio funcione mejor sin ti en el centro.</p>
+          </div>
+          <div class="tarjeta aparece">
+            <h3>Instalamos, no entregamos documentos</h3>
+            <p>El entregable no es una carpeta. Es una operación que se ejecuta distinto
+              el lunes siguiente, con responsables e indicadores asignados.</p>
+          </div>
+          <div class="tarjeta aparece">
+            <h3>Trabajamos la empresa completa</h3>
+            <p>Estructura, comercial, procesos, operación, personas y control. Arreglar
+              un área aislada solo mueve el cuello de botella de lugar.</p>
+          </div>
+          <div class="tarjeta aparece">
+            <h3>El sistema queda con la empresa</h3>
+            <p>El objetivo no es que nos necesites. Es que la operación se sostenga por
+              estructura cuando dejamos de estar.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="reticula" style="background:var(--filete-claro); border:1px solid var(--filete-claro); align-content:start">
-        <div class="tarjeta aparece" style="background:var(--blanco)">
-          <h3>No decimos cómo administrar tu empresa</h3>
-          <p>SYNKA no llega a opinar sobre tu negocio. Llega a construir el sistema que
-            hace que tu negocio funcione mejor sin ti en el centro.</p>
+      <figure class="retrato aparece" style="margin:0">
+        <div class="retrato__marco">
+          <img src="assets/img/uriel-520.jpg"
+               srcset="assets/img/uriel-520.jpg 520w, assets/img/uriel-1040.jpg 1040w"
+               sizes="(min-width: 900px) 22rem, 100vw"
+               width="520" height="780" loading="lazy" decoding="async"
+               alt="Uriel Vargas, director de SYNKA">
         </div>
-        <div class="tarjeta aparece" style="background:var(--blanco)">
-          <h3>Instalamos, no entregamos documentos</h3>
-          <p>El entregable no es una carpeta. Es una operación que se ejecuta distinto
-            el lunes siguiente, con responsables e indicadores asignados.</p>
-        </div>
-        <div class="tarjeta aparece" style="background:var(--blanco)">
-          <h3>Trabajamos la empresa completa</h3>
-          <p>Estructura, comercial, procesos, operación, personas y control. Arreglar
-            un área aislada solo mueve el cuello de botella de lugar.</p>
-        </div>
-      </div>
+        <figcaption class="retrato__pie">
+          <span class="retrato__nombre">Uriel Vargas</span>
+          <span class="retrato__cargo">Dirección · SYNKA</span>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════════════════ CTA FINAL ═════ -->
-<section class="seccion seccion--hundida" id="solicitar">
+<section class="seccion seccion--hundida seccion--signo seccion--signo-izq" id="solicitar">
   <div class="wrap">
     <div class="encabezado-seccion">
       <p class="eyebrow">El siguiente paso</p>
@@ -645,7 +600,7 @@
 
       <!-- Formulario sobre pastilla clara: un campo sobre navy no alcanza el
            contraste de 3:1 exigido para bordes de control. -->
-      <div style="background:var(--arena); padding:clamp(1.75rem,4.5vw,3rem)" class="tema-claro">
+      <div style="background:var(--fondo-claro); padding:clamp(1.75rem,4.5vw,3rem)" class="tema-claro">
         <h3 style="color:var(--navy); margin-bottom:1.75rem">Solicita tu diagnóstico</h3>
 
         <form class="form" data-form-diagnostico novalidate>
@@ -793,8 +748,7 @@
         <ul>
           <li><a href="#problema">El problema</a></li>
           <li><a href="#metodo">Método SYNKA</a></li>
-          <li><a href="#resultados">Resultados</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#diagnostico">Diagnóstico</a></li>
           <li><a href="mailto:hola@synka.mx" data-correo data-rellena>hola@synka.mx</a></li>
           <li data-oculta-si-vacio><a href="#solicitar" data-linkedin>LinkedIn</a></li>

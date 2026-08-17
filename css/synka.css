@@ -78,14 +78,21 @@
   --teal: #00A99B;
   --teal-vivo: #00C9B7;   /* solo pantalla, solo sobre navy */
   --acero: #4A6B84;       /* texto secundario solo sobre fondo claro */
-  --arena: #E8E3D9;
+  --arena: #E8E3D9;       /* del manual. Reservado a impresión y documento */
   --blanco: #FFFFFF;
+
+  /* Fondo claro del sitio. El manual (cap. 03) admite el isotipo bicolor
+     «sobre blanco, arena o gris muy claro»: este es ese gris muy claro.
+     Es frío, así que acompaña al navy en lugar de tirar a beige, y sube el
+     contraste del acero de 4.41 (que no pasaba) a 4.97. */
+  --fondo-claro:   #EEF1F4;
+  --fondo-claro-2: #E3E8ED;
 
   /* Valores de interfaz tomados de "SYNKA Sitio" y del lockup negativo oficial */
   --sobre-navy-2: #8FB4C9;  /* texto secundario sobre navy — AA 6.62 */
   --filete-navy: #123A57;   /* filete 1px sobre navy */
-  --filete-claro: #E7E5DE;  /* filete 1px sobre blanco */
-  --tinta-clara: #3A3730;   /* párrafo sobre arena / blanco */
+  --filete-claro: #DCE2E8;  /* filete 1px sobre fondo claro, frío */
+  --tinta-clara: #002B49;   /* párrafo sobre fondo claro = navy. Sin tercer color */
   --sobre-teal: #00221C;    /* texto sobre botón teal — AA 5.74 */
   --navy-alto: #01213A;     /* navy un punto más profundo, para bloques hundidos */
 
@@ -257,7 +264,7 @@ p { max-width: var(--prosa); }
 .seccion { padding-block: var(--seccion-y); }
 
 .seccion--navy { background: var(--navy); color: var(--blanco); }
-.seccion--arena { background: var(--arena); color: var(--navy); }
+.seccion--arena { background: var(--fondo-claro); color: var(--navy); }
 .seccion--blanco { background: var(--blanco); color: var(--navy); }
 .seccion--hundida { background: var(--navy-alto); color: var(--blanco); }
 
@@ -564,7 +571,7 @@ p { max-width: var(--prosa); }
 }
 
 .reticula > * { background: var(--navy); }
-.seccion--arena .reticula > * { background: var(--arena); }
+.seccion--arena .reticula > * { background: var(--fondo-claro); }
 .seccion--blanco .reticula > * { background: var(--blanco); }
 .seccion--hundida .reticula > * { background: var(--navy-alto); }
 
@@ -586,9 +593,13 @@ p { max-width: var(--prosa); }
 }
 @media (min-width: 700px) { .sintomas { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1050px) { .sintomas { grid-template-columns: repeat(3, 1fr); } }
+/* Son siete frases: en dos o tres columnas la última fila quedaría con celdas
+   vacías y el fondo de la retícula se vería como un bloque suelto. La última
+   ocupa el ancho restante. */
+.sintomas .sintoma:last-child { grid-column: 1 / -1; }
 
 .sintoma {
-  background: var(--arena);
+  background: var(--fondo-claro);
   padding: clamp(1.5rem, 3.5vw, 2rem);
   display: flex;
   align-items: baseline;
@@ -843,7 +854,7 @@ p { max-width: var(--prosa); }
   transform: rotate(45deg);   /* rombo: la unidad de la identidad */
   transition: background-color 0.15s var(--ease), border-color 0.15s var(--ease);
 }
-.diag__opcion:hover { background: var(--arena); }
+.diag__opcion:hover { background: var(--fondo-claro); }
 .diag__opcion:hover::before { border-color: var(--navy); }
 .diag__opcion[aria-pressed='true'] { background: var(--navy); color: var(--blanco); }
 .diag__opcion[aria-pressed='true']::before { background: var(--teal-vivo); border-color: var(--teal-vivo); }
@@ -1041,7 +1052,7 @@ p { max-width: var(--prosa); }
   transform: rotate(45deg);
   transition: background-color 0.15s var(--ease), border-color 0.15s var(--ease);
 }
-.opcion-radio:hover { background: var(--arena); }
+.opcion-radio:hover { background: var(--fondo-claro); }
 .opcion-radio:has(input:checked) { background: var(--navy); color: var(--blanco); }
 .opcion-radio:has(input:checked) .opcion-radio__marca { background: var(--teal-vivo); border-color: var(--teal-vivo); }
 .opcion-radio:has(input:focus-visible) { outline: 3px solid var(--navy); outline-offset: 2px; }
@@ -1237,7 +1248,7 @@ a[data-correo], a[data-telefono], a[data-linkedin] {
   transform: rotate(45deg);
   transition: background-color 0.15s var(--ease), border-color 0.15s var(--ease);
 }
-.quiz__opcion:hover { background: var(--arena); }
+.quiz__opcion:hover { background: var(--fondo-claro); }
 .quiz__opcion:hover::before { border-color: var(--navy); }
 .quiz__opcion[aria-pressed='true'] { background: var(--navy); color: var(--blanco); }
 .quiz__opcion[aria-pressed='true']::before { background: var(--teal-vivo); border-color: var(--teal-vivo); }
@@ -1365,3 +1376,73 @@ a[data-correo], a[data-telefono], a[data-linkedin] {
 .escalon h3 b { font-weight: 700; }
 .escalon .division__ir { color: var(--tinta-clara); margin-top: auto; padding-top: 0.75rem; }
 .escalon:hover .division__ir { color: var(--navy); }
+
+/* 21 · PROFUNDIDAD ------------------------------------------------------- */
+/* La sección deja de ser un bloque de color plano sin recurrir a sombras ni
+   degradados: se le mete el propio signo a gran escala, sangrado por el borde
+   y a muy baja opacidad. Es la versión monocromática del manual —los dos
+   brazos unidos en una punta continua— así que no hay dibujo nuevo. */
+
+.seccion--signo { position: relative; overflow: hidden; isolation: isolate; }
+.seccion--signo > * { position: relative; z-index: 1; }
+
+.seccion--signo::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  width: min(78vw, 760px);
+  aspect-ratio: 1;
+  right: -18%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff'%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78'/%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78' transform='rotate(90 50 50)'/%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78' transform='rotate(180 50 50)'/%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78' transform='rotate(270 50 50)'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.035;
+}
+
+/* Sobre fondo claro el campo va en navy y aún más tenue */
+.seccion--arena.seccion--signo::before,
+.seccion--blanco.seccion--signo::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='%23002B49'%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78'/%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78' transform='rotate(90 50 50)'/%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78' transform='rotate(180 50 50)'/%3E%3Cpolygon points='36,50 8,22 8,39 19,50 8,61 8,78' transform='rotate(270 50 50)'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.045;
+}
+
+/* Variante que ancla el campo a la izquierda */
+.seccion--signo-izq::before { right: auto; left: -20%; }
+
+/* Retrato --------------------------------------------------------------- */
+/* El manual pide que el logotipo sobre fotografía vaya en pastilla navy.
+   Aquí la foto se enmarca en navy y el filete la ata a la retícula. */
+
+.retrato { position: relative; align-self: start; }
+.retrato img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: saturate(0.82) contrast(1.04);
+}
+.retrato__marco { background: var(--navy); padding: 10px; }
+.retrato__pie {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.9rem;
+  background: var(--navy);
+  color: var(--blanco);
+  padding: 1.1rem 1.25rem 1.35rem;
+  border-top: 1px solid var(--filete-navy);
+}
+.retrato__nombre { font-family: var(--f-titulo); font-weight: 700; font-size: 1.0625rem; letter-spacing: 0.01em; }
+.retrato__cargo {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sobre-navy-2);
+}
+
+@media (min-width: 900px) {
+  .nosotros__grid { display: grid; grid-template-columns: 1fr minmax(0, 22rem); gap: clamp(2.5rem, 5vw, 4.5rem); align-items: start; }
+}
