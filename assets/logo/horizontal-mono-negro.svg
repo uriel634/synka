@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="160" viewBox="0 0 460 160">
+  <g transform="translate(0 30)">
+    <g fill="#000000">
+      <polygon points="36,50 6,20 6,37 19,50 6,63 6,80"></polygon>
+      <polygon points="36,50 6,20 6,37 19,50 6,63 6,80" transform="rotate(90 50 50)"></polygon>
+      <polygon points="36,50 6,20 6,37 19,50 6,63 6,80" transform="rotate(180 50 50)"></polygon>
+      <polygon points="36,50 6,20 6,37 19,50 6,63 6,80" transform="rotate(270 50 50)"></polygon>
+    </g>
+  </g>
+  <text x="128" y="103" font-family="Archivo, sans-serif" font-weight="700" font-size="84" letter-spacing="3" fill="#000000">SYNKA</text>
+</svg>

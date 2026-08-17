@@ -1,0 +1,232 @@
+[
+ {
+  "area": "Prospección",
+  "text": "¿Cómo te encuentra la mayoría de tus clientes nuevos?",
+  "hint": "Piensa en tus últimos 5 clientes — ¿cómo llegaron a ti? ¿Te buscaron ellos o los buscaste tú?",
+  "opts": [
+   {
+    "t": "Me llegan por recomendación de alguien conocido",
+    "p": 1
+   },
+   {
+    "t": "Me encuentran en redes sociales o por anuncios",
+    "p": 3
+   },
+   {
+    "t": "Yo salgo activamente a buscarlos — tengo un método",
+    "p": 5
+   },
+   {
+    "t": "Honestamente no sé muy bien cómo llegan",
+    "p": 0
+   }
+  ]
+ },
+ {
+  "area": "Independencia",
+  "text": "¿Qué pasaría con tus ventas si te tomas una semana de vacaciones?",
+  "hint": "Sé honesto — ¿alguien más puede atender y cerrar clientes mientras no estás, o todo se detiene?",
+  "opts": [
+   {
+    "t": "Todo se para — yo soy el único que vende",
+    "p": 1
+   },
+   {
+    "t": "Bajan mucho — casi todo depende de mí",
+    "p": 2
+   },
+   {
+    "t": "Tengo personas que venden, pero las superviso yo",
+    "p": 4
+   },
+   {
+    "t": "El equipo sigue solo — hay un proceso claro",
+    "p": 5
+   }
+  ]
+ },
+ {
+  "area": "Métricas",
+  "text": "¿Sabes cuántas personas te preguntan o contactan sobre tus servicios cada mes?",
+  "hint": "No necesitas el número exacto — ¿tienes aunque sea una idea aproximada de cuántas llegan?",
+  "opts": [
+   {
+    "t": "No, no llevo ese control para nada",
+    "p": 0
+   },
+   {
+    "t": "Más o menos, pero no un número concreto",
+    "p": 2
+   },
+   {
+    "t": "Sí, sé exactamente cuántas llegan cada mes",
+    "p": 5
+   },
+   {
+    "t": "Cambia tanto cada mes que es imposible saberlo",
+    "p": 1
+   }
+  ]
+ },
+ {
+  "area": "Predictibilidad",
+  "text": "¿Puedes saber hoy cuánto dinero va a entrar el mes que viene?",
+  "hint": "Imagina que hoy es el 1° del mes — ¿tienes idea de cuánto vas a cobrar antes de que acabe?",
+  "opts": [
+   {
+    "t": "No tengo idea — puede ser cualquier cosa",
+    "p": 0
+   },
+   {
+    "t": "Le puedo adivinar, pero no calcularlo",
+    "p": 2
+   },
+   {
+    "t": "Puedo estimarlo con bastante aproximación",
+    "p": 4
+   },
+   {
+    "t": "Sí, tengo una proyección y casi siempre acierto",
+    "p": 5
+   }
+  ]
+ },
+ {
+  "area": "Seguimiento",
+  "text": "¿Qué haces cuando alguien te pide precio y después no te contesta?",
+  "hint": "Piensa en la última persona que te pidió cotización y desapareció — ¿qué pasó? ¿Les escribiste?",
+  "opts": [
+   {
+    "t": "Nada — si no responden, los olvido",
+    "p": 0
+   },
+   {
+    "t": "A veces les escribo, pero sin un plan fijo",
+    "p": 1
+   },
+   {
+    "t": "Les doy seguimiento algunos días seguidos",
+    "p": 3
+   },
+   {
+    "t": "Tengo un método — les escribo varias veces hasta cerrar o descartar",
+    "p": 5
+   }
+  ]
+ },
+ {
+  "area": "Cierre",
+  "text": "¿En qué momento sientes que pierdes a los clientes?",
+  "hint": "Imagina 10 personas que mostraron interés este mes — ¿dónde se pierde la mayoría?",
+  "opts": [
+   {
+    "t": "No lo sé — no tengo forma de rastrearlo",
+    "p": 0
+   },
+   {
+    "t": "Cuando mando el precio, ahí desaparecen",
+    "p": 1
+   },
+   {
+    "t": "Cuando les escribo para darles seguimiento y ya no responden",
+    "p": 2
+   },
+   {
+    "t": "Lo identifico claramente y ya estoy trabajando en eso",
+    "p": 4
+   }
+  ]
+ },
+ {
+  "area": "Métricas",
+  "text": "¿Tienes un número en mente de cuánto quieres vender esta semana?",
+  "hint": "No hablamos de un plan de negocios formal — ¿hay aunque sea un número en tu cabeza que quieres alcanzar?",
+  "opts": [
+   {
+    "t": "No — vendo lo que llega y ya",
+    "p": 0
+   },
+   {
+    "t": "Tengo una idea del año, pero no lo bajo a la semana",
+    "p": 1
+   },
+   {
+    "t": "Sí, tengo una meta mensual que reviso",
+    "p": 3
+   },
+   {
+    "t": "Sí, tengo meta semanal y la reviso con mi equipo",
+    "p": 5
+   }
+  ]
+ },
+ {
+  "area": "Cierre",
+  "text": "¿De dónde sale el precio que le dices al cliente?",
+  "hint": "Sé honesto — ¿tienes un cálculo claro o lo pones según lo que sientes que es justo?",
+  "opts": [
+   {
+    "t": "Lo pongo a ojo — según lo que me parece razonable",
+    "p": 1
+   },
+   {
+    "t": "Calculo mis gastos, pero sin mayor análisis",
+    "p": 2
+   },
+   {
+    "t": "Comparo con la competencia y ajusto",
+    "p": 3
+   },
+   {
+    "t": "Calculo cuánto vale para el cliente y siempre incluyo mi margen",
+    "p": 5
+   }
+  ]
+ },
+ {
+  "area": "Independencia",
+  "text": "¿Está escrito en algún lugar cómo se atiende a un cliente desde que llama hasta que paga?",
+  "hint": "Si mañana contrataras a alguien nuevo, ¿podría aprender a vender en tu negocio leyendo un documento?",
+  "opts": [
+   {
+    "t": "No — cada venta va como va, sin guía",
+    "p": 0
+   },
+   {
+    "t": "Está en mi cabeza, pero no está escrito",
+    "p": 1
+   },
+   {
+    "t": "Tengo algo básico pero no es formal",
+    "p": 3
+   },
+   {
+    "t": "Sí, está escrito y cualquiera podría seguirlo",
+    "p": 5
+   }
+  ]
+ },
+ {
+  "area": "Predictibilidad",
+  "text": "¿Con qué frecuencia revisas si tus ventas van bien o mal?",
+  "hint": "¿Hay un momento en la semana en que te sientas a ver si estás cerca de tu meta, o solo te das cuenta al final del mes?",
+  "opts": [
+   {
+    "t": "Casi nunca — me entero al final del mes",
+    "p": 0
+   },
+   {
+    "t": "Solo cuando algo sale mal o hay una crisis",
+    "p": 1
+   },
+   {
+    "t": "Cada semana o cada dos semanas lo reviso",
+    "p": 3
+   },
+   {
+    "t": "Tengo un momento fijo a la semana dedicado a esto",
+    "p": 5
+   }
+  ]
+ }
+]

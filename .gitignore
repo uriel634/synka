@@ -1,0 +1,14 @@
+.DS_Store
+*.DS_Store
+
+# ─────────────────────────────────────────────────────────────
+# Entregable de identidad — NO se publica
+# El repositorio uriel634/synka es PÚBLICO. `_source/` contiene el manual
+# de marca completo, la presentación de identidad y los originales del
+# entregable. Nada de eso tiene por qué quedar descargable por cualquiera.
+#
+# Se excluye todo menos los bancos de preguntas, que sí hacen falta para
+# poder regenerar los diagnósticos con tools/gen-datos-diagnostico.py.
+# ─────────────────────────────────────────────────────────────
+_source/*
+!_source/preguntas/

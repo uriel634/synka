@@ -1,0 +1,16 @@
+{
+  "name": "SYNKA · Sistemas que hacen funcionar tu empresa",
+  "short_name": "SYNKA",
+  "description": "Convertimos negocios que dependen del dueño en empresas que funcionan con estructura, procesos y control.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#002B49",
+  "theme_color": "#002B49",
+  "icons": [
+    { "src": "assets/img/favicon-64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "assets/img/isotipo-bicolor-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/img/avatar-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

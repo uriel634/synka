@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>SYNKA · Consultoría empresarial y sistemas para PyMEs</title>
+<meta name="description" content="Convertimos negocios que dependen del dueño en empresas que funcionan con estructura, procesos y control. Consultoría empresarial para PyMEs.">
+<link rel="canonical" href="https://synka.mx/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#002B49">
+
+<!-- Las fuentes se sirven desde el propio dominio: sin petición a terceros. -->
+<link rel="preload" href="assets/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plexmono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/synka.css">
+
+<link rel="icon" href="assets/logo/favicon-32.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/avatar-1024.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="SYNKA">
+<meta property="og:title" content="SYNKA · Sistemas que hacen funcionar tu empresa">
+<meta property="og:description" content="Convertimos negocios que dependen del dueño en empresas que funcionan con estructura, procesos y control.">
+<meta property="og:url" content="https://synka.mx/">
+<meta property="og:image" content="https://synka.mx/assets/img/og-synka.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SYNKA · Sistemas que hacen funcionar tu empresa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SYNKA · Sistemas que hacen funcionar tu empresa">
+<meta name="twitter:description" content="Convertimos negocios que dependen del dueño en empresas que funcionan con estructura, procesos y control.">
+<meta name="twitter:image" content="https://synka.mx/assets/img/og-synka.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://synka.mx/#organizacion",
+      "name": "SYNKA",
+      "url": "https://synka.mx/",
+      "slogan": "Sistemas que hacen funcionar tu empresa",
+      "description": "Consultoría que convierte negocios dependientes del dueño en empresas que funcionan con estructura, procesos y control.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://synka.mx/assets/img/isotipo-bicolor-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://synka.mx/#servicio",
+      "name": "SYNKA",
+      "url": "https://synka.mx/",
+      "parentOrganization": { "@id": "https://synka.mx/#organizacion" },
+      "areaServed": { "@type": "Country", "name": "México" },
+      "knowsAbout": [
+        "Consultoría empresarial",
+        "Procesos empresariales",
+        "Estandarización de procesos",
+        "Profesionalización de empresas",
+        "Procesos comerciales",
+        "Operación empresarial",
+        "Sistemas empresariales"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "El sistema de tu empresa",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SYNKA ESTRUCTURA", "description": "Organigrama real, roles definidos y niveles de decisión.", "url": "https://synka.mx/soluciones/estructura.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SYNKA COMERCIAL", "description": "Estructura de ventas, pipeline y cuotas.", "url": "https://synka.mx/soluciones/comercial.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SYNKA PROCESOS", "description": "Estandarización y documentación de procesos.", "url": "https://synka.mx/soluciones/procesos.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SYNKA OPERACIÓN", "description": "Funcionamiento y ejecución diaria.", "url": "https://synka.mx/soluciones/operacion.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SYNKA PERSONAS", "description": "Responsabilidades, desempeño y equipo.", "url": "https://synka.mx/soluciones/personas.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SYNKA CONTROL", "description": "Indicadores y toma de decisiones.", "url": "https://synka.mx/soluciones/control.html" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://synka.mx/#sitio",
+      "url": "https://synka.mx/",
+      "name": "SYNKA",
+      "inLanguage": "es-MX",
+      "publisher": { "@id": "https://synka.mx/#organizacion" }
+    }
+  ]
+}
+</script>
+
+<script src="js/config.js"></script>
+</head>
+
+<body>
+<a class="salta-al-contenido" href="#contenido">Saltar al contenido</a>
+
+<!-- ═══════════════════════════════════════════════════════════ HEADER ═══ -->
+<header class="header">
+  <div class="wrap header__barra">
+    <a class="logotipo" href="index.html" aria-label="SYNKA · Inicio">
+      <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+      </svg>
+      <span class="logotipo__palabra">SYNKA</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a class="nav__enlace" href="#problema">El problema</a></li>
+        <li><a class="nav__enlace" href="#metodo">Método SYNKA</a></li>
+        <li><a class="nav__enlace" href="#soluciones">Soluciones</a></li>
+        <li><a class="nav__enlace" href="#resultados">Resultados</a></li>
+        <li><a class="nav__enlace" href="#nosotros">Nosotros</a></li>
+        <li><a class="nav__enlace" href="#diagnostico">Diagnóstico</a></li>
+      </ul>
+      <a class="btn btn--primario" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="header">Solicitar diagnóstico</a>
+    </nav>
+
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <span class="progreso" data-progreso aria-hidden="true"></span>
+  </div>
+
+  <div class="wrap menu-movil" id="menu-movil" data-menu data-abierto="false">
+    <nav aria-label="Principal, versión móvil">
+      <ul>
+        <li><a href="#problema">El problema</a></li>
+        <li><a href="#metodo">Método SYNKA</a></li>
+        <li><a href="#soluciones">Soluciones</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#diagnostico">Diagnóstico</a></li>
+      </ul>
+      <a class="btn btn--primario btn--bloque" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="menu_movil">Solicitar diagnóstico</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ═════════════════════════════════════════════════════════════ HERO ═══ -->
+<section class="hero seccion--navy">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="eyebrow">Sistemas que hacen funcionar tu empresa</p>
+
+      <h1>Tu empresa no debería depender de ti.</h1>
+
+      <p class="lead">Diseñamos la estructura, los procesos y los sistemas que hacen que
+        tu empresa funcione como un solo sistema. No como una extensión de tu memoria.</p>
+
+      <div class="grupo-cta">
+        <a class="btn btn--primario" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="hero">Solicita tu diagnóstico</a>
+        <a class="enlace-linea" href="#metodo" data-cta="conoce_metodo" data-seccion="hero">
+          Conoce el Método SYNKA
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+        </a>
+      </div>
+
+      <p class="hero__firma sin-tope">
+        <span>PyMEs de 5 a 100+ colaboradores</span>
+        <span>Estructura · Procesos · Control</span>
+      </p>
+    </div>
+
+    <!-- El signo converge al entrar: cuatro partes que forman un centro que
+         nadie dibuja. Es el concepto de la marca, no un adorno. -->
+    <div class="hero__signo">
+      <svg class="signo signo--anima" data-signo viewBox="0 0 100 100" role="img" aria-label="Isotipo SYNKA: cuatro partes convergentes">
+        <g class="signo__brazo"><g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+        <g class="signo__brazo"><g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+        <g class="signo__brazo"><g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+        <g class="signo__brazo"><g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════ PROBLEMA ═══ -->
+<section class="seccion seccion--arena" id="problema">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">El punto de partida</p>
+      <h2>¿Tu empresa creció, pero sigue dependiendo de ti?</h2>
+      <p class="lead">Estas frases no son ejemplos. Son las que se escuchan todos los días
+        dentro de empresas que ya venden, ya tienen equipo y ya tienen clientes.</p>
+    </div>
+
+    <ul class="sintomas">
+      <li class="sintoma aparece"><span class="sintoma__n">01</span><span class="sintoma__frase">«Pregúntale al dueño.»</span></li>
+      <li class="sintoma aparece"><span class="sintoma__n">02</span><span class="sintoma__frase">«Eso siempre lo ha hecho Juan.»</span></li>
+      <li class="sintoma aparece"><span class="sintoma__n">03</span><span class="sintoma__frase">«Sin mí esto no funciona.»</span></li>
+      <li class="sintoma aparece"><span class="sintoma__n">04</span><span class="sintoma__frase">«No sé quién es responsable.»</span></li>
+      <li class="sintoma aparece"><span class="sintoma__n">05</span><span class="sintoma__frase">«Cada quien lo hace diferente.»</span></li>
+      <li class="sintoma aparece"><span class="sintoma__n">06</span><span class="sintoma__frase">«No tenemos un proceso.»</span></li>
+      <li class="sintoma aparece"><span class="sintoma__n">07</span><span class="sintoma__frase">«No sabemos exactamente qué está pasando.»</span></li>
+    </ul>
+
+    <div style="margin-top:clamp(2.5rem,6vw,3.5rem); display:grid; gap:1.5rem">
+      <p class="t-h3" style="max-width:30ch">El problema no es la falta de esfuerzo.
+        Es que el dueño se convirtió en el sistema operativo de su empresa.</p>
+      <p>Mientras el criterio, la excepción y la decisión vivan en una sola cabeza, la empresa
+        no puede crecer más rápido de lo que esa persona alcanza a atender. No es un problema
+        de disciplina del equipo: es un problema de arquitectura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ TRANSFORMACIÓN ═══ -->
+<section class="seccion seccion--navy seccion--linea" id="transformacion">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">La transformación</p>
+      <h2>De negocio dependiente a empresa que se sostiene sola</h2>
+    </div>
+
+    <div class="transformacion">
+      <div class="transformacion__lado transformacion__lado--de">
+        <h3>Antes · Dependencia</h3>
+        <ul class="transformacion__lista">
+          <li class="aparece">Caos</li>
+          <li class="aparece">Dependencia</li>
+          <li class="aparece">Improvisación</li>
+          <li class="aparece">Procesos informales</li>
+          <li class="aparece">Falta de control</li>
+        </ul>
+      </div>
+
+      <div class="transformacion__pivote" aria-hidden="true">
+        <svg class="signo signo--anima" data-signo viewBox="0 0 100 100" focusable="false">
+          <g class="signo__brazo"><g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+          <g class="signo__brazo"><g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+          <g class="signo__brazo"><g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+          <g class="signo__brazo"><g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g></g>
+        </svg>
+      </div>
+
+      <div class="transformacion__lado transformacion__lado--a">
+        <h3>Después · Sistema</h3>
+        <ul class="transformacion__lista">
+          <li class="aparece">Estructura</li>
+          <li class="aparece">Procesos</li>
+          <li class="aparece">Responsabilidades</li>
+          <li class="aparece">Indicadores</li>
+          <li class="aparece">Control</li>
+          <li class="aparece">Autonomía</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="lead" style="margin-top:clamp(2.5rem,6vw,3.5rem)">
+      El centro que coordina una empresa no es una persona: es el espacio que las partes
+      mantienen abierto al estar alineadas. Si una se mueve, el centro desaparece.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ MÉTODO ═══ -->
+<section class="seccion seccion--blanco" id="metodo">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">Metodología propietaria</p>
+      <h2>Método SYNKA<span aria-hidden="true">™</span></h2>
+      <p class="lead">Tres fases, seis movimientos. No es un diagnóstico que entrega un
+        documento: es una secuencia que termina cuando la empresa opera sin ti en el centro.</p>
+    </div>
+
+    <div class="fase">
+      <div class="fase__cabecera">
+        <span class="fase__n">FASE 01</span>
+        <h3 class="fase__titulo">Diagnóstico</h3>
+      </div>
+      <div class="pasos">
+        <article class="paso aparece">
+          <span class="paso__n">01</span>
+          <h3>Diagnosticar</h3>
+          <p>Detectamos dónde está la dependencia: qué decisiones, qué procesos y qué
+            personas se detienen cuando el dueño no está.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="fase">
+      <div class="fase__cabecera">
+        <span class="fase__n">FASE 02</span>
+        <h3 class="fase__titulo">Diseño</h3>
+      </div>
+      <div class="pasos pasos--2">
+        <article class="paso aparece">
+          <span class="paso__n">02</span>
+          <h3>Estructurar</h3>
+          <p>Definimos cómo debe funcionar: organigrama real, roles, responsabilidades
+            y niveles de decisión que no regresan a ti.</p>
+        </article>
+        <article class="paso aparece">
+          <span class="paso__n">03</span>
+          <h3>Sistematizar</h3>
+          <p>Convertimos la operación en procesos: mapeo de flujos, procedimientos
+            documentados y estándares que cualquiera puede ejecutar.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="fase">
+      <div class="fase__cabecera">
+        <span class="fase__n">FASE 03</span>
+        <h3 class="fase__titulo">Implementación</h3>
+      </div>
+      <div class="pasos pasos--3">
+        <article class="paso aparece">
+          <span class="paso__n">04</span>
+          <h3>Implementar</h3>
+          <p>Llevamos los procesos a la realidad con el equipo que los va a ejecutar.
+            Un proceso que no se instala no existe.</p>
+        </article>
+        <article class="paso aparece">
+          <span class="paso__n">05</span>
+          <h3>Controlar</h3>
+          <p>Creamos indicadores y mecanismos de seguimiento para saber cómo va la
+            empresa sin tener que preguntar.</p>
+        </article>
+        <article class="paso aparece">
+          <span class="paso__n">06</span>
+          <h3>Autonomizar</h3>
+          <p>Reducimos la dependencia del dueño hasta que la operación se sostiene
+            por estructura y no por presencia.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="grupo-cta" style="margin-top:clamp(2.5rem,6vw,3.5rem)">
+      <a class="btn btn--primario" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="metodo">Empieza por el diagnóstico</a>
+      <a class="enlace-linea" href="#soluciones" data-cta="ver_soluciones" data-seccion="metodo">
+        Ver las seis divisiones
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════ SOLUCIONES ═══ -->
+<section class="seccion seccion--navy" id="soluciones">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">Seis frentes</p>
+      <h2>El sistema de tu empresa</h2>
+      <p class="lead">Cada división resuelve una parte del sistema. Entran juntas o por
+        etapas, según lo que el diagnóstico encuentre. Trabajamos la empresa completa,
+        no un área aislada.</p>
+    </div>
+
+    <div class="divisiones">
+
+      <a class="division aparece" data-rama="estructura" href="soluciones/estructura.html" data-cta="division" data-seccion="soluciones">
+        <svg class="division__signo" viewBox="0 0 100 100" style="color:var(--rama)" aria-hidden="true" focusable="false">
+          <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+        </svg>
+        <h3 class="marca-division division__nombre"><b>SYNKA</b> <span>ESTRUCTURA</span><sup aria-hidden="true">™</sup></h3>
+        <p>Organización, roles y responsabilidades. Organigrama real y niveles de decisión que no regresan a ti.</p>
+        <span class="division__ir">Ver división <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+
+      <a class="division aparece" data-rama="comercial" href="soluciones/comercial.html" data-cta="division" data-seccion="soluciones">
+        <svg class="division__signo" viewBox="0 0 100 100" style="color:var(--rama)" aria-hidden="true" focusable="false">
+          <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+        </svg>
+        <h3 class="marca-division division__nombre"><b>SYNKA</b> <span>COMERCIAL</span><sup aria-hidden="true">™</sup></h3>
+        <p>Sistema y control de ventas. Estructura comercial, pipeline y cuotas que no dependen del dueño vendiendo.</p>
+        <span class="division__ir">Ver división <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+
+      <a class="division aparece" data-rama="procesos" href="soluciones/procesos.html" data-cta="division" data-seccion="soluciones">
+        <svg class="division__signo" viewBox="0 0 100 100" style="color:var(--rama)" aria-hidden="true" focusable="false">
+          <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+        </svg>
+        <h3 class="marca-division division__nombre"><b>SYNKA</b> <span>PROCESOS</span><sup aria-hidden="true">™</sup></h3>
+        <p>Estandarización y documentación. Mapeo de flujos y procedimientos que cualquiera puede ejecutar igual.</p>
+        <span class="division__ir">Ver división <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+
+      <a class="division aparece" data-rama="operacion" href="soluciones/operacion.html" data-cta="division" data-seccion="soluciones">
+        <svg class="division__signo" viewBox="0 0 100 100" style="color:var(--rama)" aria-hidden="true" focusable="false">
+          <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+        </svg>
+        <h3 class="marca-division division__nombre"><b>SYNKA</b> <span>OPERACIÓN</span><sup aria-hidden="true">™</sup></h3>
+        <p>Funcionamiento y ejecución diaria. Estándares de servicio que se sostienen sin supervisión permanente.</p>
+        <span class="division__ir">Ver división <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+
+      <a class="division aparece" data-rama="personas" href="soluciones/personas.html" data-cta="division" data-seccion="soluciones">
+        <svg class="division__signo" viewBox="0 0 100 100" style="color:var(--rama)" aria-hidden="true" focusable="false">
+          <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+        </svg>
+        <h3 class="marca-division division__nombre"><b>SYNKA</b> <span>PERSONAS</span><sup aria-hidden="true">™</sup></h3>
+        <p>Responsabilidades, desempeño y equipo. Perfiles de puesto y evaluación de quienes van a sostener el sistema.</p>
+        <span class="division__ir">Ver división <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+
+      <a class="division aparece" data-rama="control" href="soluciones/control.html" data-cta="division" data-seccion="soluciones">
+        <svg class="division__signo" viewBox="0 0 100 100" style="color:var(--rama)" aria-hidden="true" focusable="false">
+          <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+          <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>
+        </svg>
+        <h3 class="marca-division division__nombre"><b>SYNKA</b> <span>CONTROL</span><sup aria-hidden="true">™</sup></h3>
+        <p>Indicadores y toma de decisiones. Tablero y auditoría para saber cómo va la empresa sin preguntar.</p>
+        <span class="division__ir">Ver división <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ DIAGNÓSTICO ═══ -->
+<section class="seccion seccion--arena" id="diagnostico">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">Nivel 0 · Autoevaluación · 8 preguntas · 2 minutos</p>
+      <h2>¿Qué tan dependiente es tu empresa de ti?</h2>
+      <p class="lead">Responde con honestidad. Al terminar sabrás tu nivel de dependencia
+        y cuál de las seis divisiones concentra hoy el mayor riesgo.</p>
+    </div>
+
+    <div class="diag" data-diagnostico>
+      <div class="diag__barra">
+        <span data-paso>01 / 08</span>
+        <span class="diag__pista" aria-hidden="true"><span class="diag__avance" data-avance></span></span>
+      </div>
+
+      <!-- Sin JavaScript: se explica y se remite al formulario -->
+      <div class="diag__sin-js" data-sin-js>
+        <h3 style="margin-bottom:1rem">Autoevaluación de dependencia</h3>
+        <p style="margin-bottom:1.5rem">La autoevaluación interactiva necesita JavaScript.
+          Puedes responder estas mismas ocho preguntas con nosotros en el diagnóstico:</p>
+        <ol style="display:grid; gap:.6rem; margin-bottom:1.75rem; list-style:decimal; padding-left:1.25rem">
+          <li>¿Tu equipo necesita preguntarte antes de tomar decisiones?</li>
+          <li>¿Si te ausentas, la operación se complica?</li>
+          <li>¿Existen procesos que solamente una persona conoce?</li>
+          <li>¿Cada colaborador trabaja de manera diferente?</li>
+          <li>¿Tus ventas tienen un proceso definido?</li>
+          <li>¿Tienes indicadores claros?</li>
+          <li>¿Tu operación está documentada?</li>
+          <li>¿Sabes exactamente quién es responsable de cada proceso?</li>
+        </ol>
+        <a class="btn btn--primario" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="diagnostico_sin_js">Solicitar diagnóstico</a>
+      </div>
+
+      <div class="diag__cuerpo" data-vista-pregunta hidden>
+        <fieldset class="diag__pregunta">
+          <legend data-legend></legend>
+          <div class="diag__opciones" data-opciones role="group" aria-label="Opciones de respuesta"></div>
+        </fieldset>
+        <div class="diag__pie">
+          <button type="button" class="diag__atras" data-atras hidden>← Anterior</button>
+        </div>
+      </div>
+
+      <div class="diag__cuerpo diag__resultado" data-vista-resultado tabindex="-1" role="status" aria-live="polite">
+        <p class="diag__nivel">Tu resultado</p>
+        <p class="diag__veredicto" data-veredicto></p>
+        <div class="diag__medidor" data-medidor role="img"></div>
+        <p data-texto-nivel></p>
+
+        <div class="diag__foco" data-foco>
+          <span class="dato">MAYOR PUNTO DE DEPENDENCIA</span>
+          <p class="marca-division"><b>SYNKA</b> <span data-foco-nombre></span></p>
+          <p data-foco-desc></p>
+          <p><a href="#soluciones" data-foco-url data-cta="division_desde_diagnostico" data-seccion="diagnostico">Ver esta división</a></p>
+        </div>
+
+        <div class="grupo-cta">
+          <a class="btn btn--primario" href="#solicitar" data-cta="diagnostico_completo" data-seccion="diagnostico_resultado">Quiero mi diagnóstico completo</a>
+          <button type="button" class="diag__reiniciar" data-reiniciar>Volver a empezar</button>
+        </div>
+
+        <p class="form__aviso" style="margin-top:1.75rem">Esta autoevaluación es una señal, no un
+          dictamen. El diagnóstico SYNKA se hace con el dueño y las áreas clave, sobre tu
+          operación real.</p>
+      </div>
+    </div>
+
+    <!-- Escalera de instrumentos: de la señal al mapa, y del mapa al detalle -->
+    <div class="reticula reticula--2" style="margin-top:clamp(2.5rem,6vw,3.5rem)">
+      <a class="tarjeta escalon" href="diagnostico/radar.html" data-cta="ir_radar" data-seccion="diagnostico">
+        <span class="dato escalon__nivel">NIVEL 1 · 21 PREGUNTAS · 5 MINUTOS</span>
+        <h3><span style="font-weight:300">RADAR</span> <b>SYNKA</b><sup aria-hidden="true">™</sup></h3>
+        <p>El mapa completo. Mide las seis divisiones una por una y te dice en cuál se
+          concentra la dependencia.</p>
+        <span class="division__ir">Abrir el radar <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+      <a class="tarjeta escalon" href="diagnostico/comercial.html" data-cta="ir_comercial" data-seccion="diagnostico">
+        <span class="dato escalon__nivel">NIVEL 2 · 10 PREGUNTAS · 3 MINUTOS</span>
+        <h3><span style="font-weight:300">DIAGNÓSTICO</span> <b>COMERCIAL</b><sup aria-hidden="true">™</sup></h3>
+        <p>El detalle de una sola división. Seis áreas del sistema de ventas, con semáforo
+          y las más débiles señaladas.</p>
+        <span class="division__ir">Abrir el diagnóstico <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════ RESULTADOS ═══ -->
+<section class="seccion seccion--navy seccion--linea" id="resultados">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">Resultados</p>
+      <h2>Casos documentados</h2>
+      <p class="lead">Cada intervención se documenta con la misma estructura: qué estaba
+        pasando, qué se instaló y qué cambió. Publicamos casos solo con autorización del
+        cliente y con datos verificables.</p>
+    </div>
+
+    <div class="reticula reticula--3">
+      <!-- Estructura lista para poblar. No se publican cifras, testimonios,
+           logotipos ni porcentajes que no existan. -->
+      <article class="tarjeta caso aparece">
+        <p class="marcador">Caso 01 · Pendiente de publicación</p>
+        <div>
+          <dl>
+            <dt>Problema</dt>
+            <dd>Situación de partida documentada en el diagnóstico.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Intervención</dt>
+            <dd>Divisiones aplicadas y alcance del trabajo.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Resultado</dt>
+            <dd>Cambio observable al cierre de la implementación.</dd>
+          </dl>
+        </div>
+        <blockquote class="caso__testimonio">Testimonio del cliente, con nombre y cargo.</blockquote>
+      </article>
+
+      <article class="tarjeta caso aparece">
+        <p class="marcador">Caso 02 · Pendiente de publicación</p>
+        <div><dl><dt>Problema</dt><dd>Situación de partida documentada en el diagnóstico.</dd></dl></div>
+        <div><dl><dt>Intervención</dt><dd>Divisiones aplicadas y alcance del trabajo.</dd></dl></div>
+        <div><dl><dt>Resultado</dt><dd>Cambio observable al cierre de la implementación.</dd></dl></div>
+        <blockquote class="caso__testimonio">Testimonio del cliente, con nombre y cargo.</blockquote>
+      </article>
+
+      <article class="tarjeta caso aparece">
+        <p class="marcador">Caso 03 · Pendiente de publicación</p>
+        <div><dl><dt>Problema</dt><dd>Situación de partida documentada en el diagnóstico.</dd></dl></div>
+        <div><dl><dt>Intervención</dt><dd>Divisiones aplicadas y alcance del trabajo.</dd></dl></div>
+        <div><dl><dt>Resultado</dt><dd>Cambio observable al cierre de la implementación.</dd></dl></div>
+        <blockquote class="caso__testimonio">Testimonio del cliente, con nombre y cargo.</blockquote>
+      </article>
+    </div>
+
+    <p class="form__aviso" style="margin-top:2rem; color:var(--sobre-navy-2)">
+      Prefiriendo no publicar nada antes que publicar algo inventado, esta sección permanece
+      vacía hasta tener casos autorizados. Si quieres referencias directas, las damos en la
+      conversación.
+    </p>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════ NOSOTROS ═══ -->
+<section class="seccion seccion--blanco" id="nosotros">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">Sobre SYNKA</p>
+      <h2>Creemos que una empresa no debería funcionar gracias a la memoria de su dueño</h2>
+    </div>
+
+    <div class="reticula reticula--2" style="border:0; background:transparent; gap:clamp(2rem,5vw,4rem)">
+      <div style="background:transparent">
+        <p style="margin-bottom:1.25rem">Una empresa no debería funcionar gracias a la memoria,
+          la experiencia o la presencia permanente de su dueño. Debe funcionar gracias a sistemas.</p>
+        <p style="margin-bottom:1.25rem">SYNKA viene de sincronizar. No representa orden ni jerarquía:
+          representa coordinación. Personas, procesos, ventas, operación y control funcionando
+          como un solo sistema.</p>
+        <p>Casi todas las firmas del sector ocupan el territorio del orden: rejillas, columnas,
+          pirámides. Eso comunica rigidez, no explica por qué la empresa funcionaría sin el dueño.
+          Nosotros trabajamos el territorio de la coordinación: partes que se mueven a la vez
+          sin que nadie las empuje.</p>
+      </div>
+
+      <div class="reticula" style="background:var(--filete-claro); border:1px solid var(--filete-claro); align-content:start">
+        <div class="tarjeta aparece" style="background:var(--blanco)">
+          <h3>No decimos cómo administrar tu empresa</h3>
+          <p>SYNKA no llega a opinar sobre tu negocio. Llega a construir el sistema que
+            hace que tu negocio funcione mejor sin ti en el centro.</p>
+        </div>
+        <div class="tarjeta aparece" style="background:var(--blanco)">
+          <h3>Instalamos, no entregamos documentos</h3>
+          <p>El entregable no es una carpeta. Es una operación que se ejecuta distinto
+            el lunes siguiente, con responsables e indicadores asignados.</p>
+        </div>
+        <div class="tarjeta aparece" style="background:var(--blanco)">
+          <h3>Trabajamos la empresa completa</h3>
+          <p>Estructura, comercial, procesos, operación, personas y control. Arreglar
+            un área aislada solo mueve el cuello de botella de lugar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════ CTA FINAL ═════ -->
+<section class="seccion seccion--hundida" id="solicitar">
+  <div class="wrap">
+    <div class="encabezado-seccion">
+      <p class="eyebrow">El siguiente paso</p>
+      <h2>¿Cuánto de tu empresa todavía depende de ti?</h2>
+      <p class="lead">El diagnóstico es una sesión de trabajo con el dueño y las áreas clave.
+        Al terminar sabes qué depende de ti, por qué, y en qué orden se resuelve.</p>
+    </div>
+
+    <div class="reticula reticula--2" style="border:0; background:transparent; gap:clamp(2rem,5vw,4rem)">
+
+      <!-- Formulario sobre pastilla clara: un campo sobre navy no alcanza el
+           contraste de 3:1 exigido para bordes de control. -->
+      <div style="background:var(--arena); padding:clamp(1.75rem,4.5vw,3rem)" class="tema-claro">
+        <h3 style="color:var(--navy); margin-bottom:1.75rem">Solicita tu diagnóstico</h3>
+
+        <form class="form" data-form-diagnostico novalidate>
+          <div class="trampa" aria-hidden="true">
+            <label for="empresa_web">No llenar</label>
+            <input type="text" id="empresa_web" name="empresa_web" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__fila form__fila--2">
+            <p class="campo">
+              <label for="nombre">Nombre <span class="campo__requerido" aria-hidden="true">*</span></label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </p>
+            <p class="campo">
+              <label for="empresa">Empresa <span class="campo__requerido" aria-hidden="true">*</span></label>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
+            </p>
+          </div>
+
+          <div class="form__fila form__fila--2">
+            <p class="campo">
+              <label for="puesto">Puesto <span class="campo__requerido" aria-hidden="true">*</span></label>
+              <input type="text" id="puesto" name="puesto" autocomplete="organization-title" required>
+            </p>
+            <p class="campo">
+              <label for="colaboradores">Número aproximado de colaboradores <span class="campo__requerido" aria-hidden="true">*</span></label>
+              <select id="colaboradores" name="colaboradores" required>
+                <option value="">Selecciona</option>
+                <option value="1-4">1 a 4</option>
+                <option value="5-15">5 a 15</option>
+                <option value="16-50">16 a 50</option>
+                <option value="51-100">51 a 100</option>
+                <option value="100+">Más de 100</option>
+              </select>
+            </p>
+          </div>
+
+          <div class="form__fila form__fila--2">
+            <p class="campo">
+              <label for="whatsapp">WhatsApp <span class="campo__requerido" aria-hidden="true">*</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel" required>
+            </p>
+            <p class="campo">
+              <label for="email">Email <span class="campo__requerido" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+            </p>
+          </div>
+
+          <fieldset class="campo" style="border:0; padding:0; margin:0">
+            <legend class="campo" style="display:block; font-family:var(--f-mono); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--navy); margin-bottom:.5rem">
+              ¿Qué es lo que más depende de ti actualmente?
+            </legend>
+            <div class="opciones-radio">
+              <label class="opcion-radio"><input type="radio" name="depende_de" value="Ventas"><span class="opcion-radio__marca" aria-hidden="true"></span>Ventas</label>
+              <label class="opcion-radio"><input type="radio" name="depende_de" value="Operación"><span class="opcion-radio__marca" aria-hidden="true"></span>Operación</label>
+              <label class="opcion-radio"><input type="radio" name="depende_de" value="Personal"><span class="opcion-radio__marca" aria-hidden="true"></span>Personal</label>
+              <label class="opcion-radio"><input type="radio" name="depende_de" value="Administración"><span class="opcion-radio__marca" aria-hidden="true"></span>Administración</label>
+              <label class="opcion-radio"><input type="radio" name="depende_de" value="Procesos"><span class="opcion-radio__marca" aria-hidden="true"></span>Procesos</label>
+              <label class="opcion-radio"><input type="radio" name="depende_de" value="Todo"><span class="opcion-radio__marca" aria-hidden="true"></span>Todo</label>
+            </div>
+          </fieldset>
+
+          <p class="campo">
+            <label for="problema_actual">Principal problema actualmente</label>
+            <textarea id="problema_actual" name="problema_actual" rows="4" placeholder="En una o dos frases: qué es lo que hoy no funciona sin ti."></textarea>
+          </p>
+
+          <p class="form__error" data-form-error role="alert" hidden></p>
+
+          <button class="btn btn--primario btn--bloque" type="submit" data-cta="enviar_formulario" data-seccion="cta_final">Solicitar diagnóstico</button>
+
+          <p class="form__aviso">Los campos marcados con <span aria-hidden="true">*</span><span class="solo-lectores">asterisco</span> son obligatorios.
+            Usamos tus datos únicamente para contactarte sobre el diagnóstico.</p>
+        </form>
+      </div>
+
+      <div style="background:transparent; align-self:start">
+        <h3 style="margin-bottom:1.5rem">Qué pasa después</h3>
+        <ol class="reticula" style="background:var(--filete-navy); border:1px solid var(--filete-navy)">
+          <li class="tarjeta aparece" style="background:var(--navy-alto); padding:1.5rem">
+            <span class="dato" style="color:var(--sobre-navy-2); display:block; margin-bottom:.5rem">PASO 01</span>
+            <p style="color:var(--sobre-navy-2); font-size:1rem">Te contactamos para entender el contexto y confirmar si el diagnóstico aplica a tu caso.</p>
+          </li>
+          <li class="tarjeta aparece" style="background:var(--navy-alto); padding:1.5rem">
+            <span class="dato" style="color:var(--sobre-navy-2); display:block; margin-bottom:.5rem">PASO 02</span>
+            <p style="color:var(--sobre-navy-2); font-size:1rem">Sesión de trabajo con el dueño y los responsables de las áreas clave.</p>
+          </li>
+          <li class="tarjeta aparece" style="background:var(--navy-alto); padding:1.5rem">
+            <span class="dato" style="color:var(--sobre-navy-2); display:block; margin-bottom:.5rem">PASO 03</span>
+            <p style="color:var(--sobre-navy-2); font-size:1rem">Entregamos el mapa de dependencia y el orden en que se resuelve.</p>
+          </li>
+        </ol>
+
+        <div style="margin-top:2rem; border-top:1px solid var(--filete-navy); padding-top:1.75rem">
+          <p class="dato" style="color:var(--sobre-navy-2); margin-bottom:1rem">CONTACTO DIRECTO</p>
+          <p style="margin-bottom:.75rem"><a href="mailto:hola@synka.mx" data-correo data-rellena>hola@synka.mx</a></p>
+          <p style="margin-bottom:.75rem" data-oculta-si-vacio><a href="#solicitar" data-telefono data-rellena>Teléfono</a></p>
+          <a class="btn btn--fantasma" href="#solicitar" data-whatsapp hidden>Escribir por WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════════ FOOTER ═══ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logotipo" href="index.html" aria-label="SYNKA · Inicio">
+          <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+            <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+            <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+            <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+            <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+          </svg>
+          <span class="logotipo__palabra">SYNKA</span>
+        </a>
+        <p class="footer__descriptor">Sistemas que hacen funcionar tu empresa</p>
+      </div>
+
+      <div>
+        <h4>Soluciones</h4>
+        <ul>
+          <li><a href="soluciones/estructura.html">SYNKA Estructura</a></li>
+          <li><a href="soluciones/comercial.html">SYNKA Comercial</a></li>
+          <li><a href="soluciones/procesos.html">SYNKA Procesos</a></li>
+          <li><a href="soluciones/operacion.html">SYNKA Operación</a></li>
+          <li><a href="soluciones/personas.html">SYNKA Personas</a></li>
+          <li><a href="soluciones/control.html">SYNKA Control</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Diagnóstico</h4>
+        <ul>
+          <li><a href="#diagnostico">Autoevaluación de dependencia</a></li>
+          <li><a href="diagnostico/radar.html">Radar SYNKA</a></li>
+          <li><a href="diagnostico/comercial.html">Diagnóstico Comercial</a></li>
+        </ul>
+        <h4 style="margin-top:1.75rem">Navegación</h4>
+        <ul>
+          <li><a href="#problema">El problema</a></li>
+          <li><a href="#metodo">Método SYNKA</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#diagnostico">Diagnóstico</a></li>
+          <li><a href="mailto:hola@synka.mx" data-correo data-rellena>hola@synka.mx</a></li>
+          <li data-oculta-si-vacio><a href="#solicitar" data-linkedin>LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <span>© <span id="anio">2026</span> SYNKA</span>
+      <span>Todo funcionando como uno</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+<script src="js/synka.js" defer></script>
+</body>
+</html>

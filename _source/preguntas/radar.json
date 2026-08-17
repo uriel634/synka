@@ -1,0 +1,254 @@
+[
+ {
+  "dim": 0,
+  "text": "¿Con qué frecuencia revisas tu estado de resultados (ingresos vs gastos)?",
+  "help": "",
+  "options": [
+   "Nunca lo reviso",
+   "Una vez al año",
+   "Mensualmente",
+   "Semanalmente",
+   "Tengo un dashboard diario"
+  ]
+ },
+ {
+  "dim": 0,
+  "text": "¿Conoces tu margen de utilidad neta actual?",
+  "help": "Lo que realmente te queda después de restar TODOS los gastos, no solo el costo del producto.",
+  "options": [
+   "No sé qué es eso",
+   "Tengo una idea muy vaga",
+   "Sí, lo reviso mensualmente",
+   "Sí, lo monitoreo semanalmente",
+   "Sí, con precisión en tiempo real"
+  ]
+ },
+ {
+  "dim": 0,
+  "text": "¿Tienes un presupuesto anual con seguimiento activo?",
+  "help": "",
+  "options": [
+   "No tengo presupuesto",
+   "Solo lo planeé mentalmente",
+   "Tengo uno básico sin seguimiento",
+   "Sí, con seguimiento mensual",
+   "Sí, con alertas automáticas de desviación"
+  ]
+ },
+ {
+  "dim": 0,
+  "text": "¿Puedes predecir tu flujo de caja con 60 días de anticipación?",
+  "help": "Saber con anticipación si vas a tener dinero en la cuenta para cubrir nómina, proveedores y gastos.",
+  "options": [
+   "No tengo idea de qué entra o sale",
+   "Con mucha dificultad",
+   "A veces, en meses normales",
+   "Casi siempre",
+   "Siempre, tengo proyecciones actualizadas"
+  ]
+ },
+ {
+  "dim": 1,
+  "text": "¿Tu equipo conoce y puede explicar los objetivos del año?",
+  "help": "",
+  "options": [
+   "Nadie los conoce",
+   "Solo los directivos",
+   "La mitad del equipo",
+   "La mayoría sí",
+   "Todo el equipo, con indicadores claros"
+  ]
+ },
+ {
+  "dim": 1,
+  "text": "¿Tienes un plan estratégico documentado para los próximos 12 meses?",
+  "help": "",
+  "options": [
+   "No existe ningún plan",
+   "Está en mi cabeza",
+   "Tengo notas sin estructura",
+   "Sí, documentado pero poco revisado",
+   "Sí, documentado con KPIs y revisiones mensuales"
+  ]
+ },
+ {
+  "dim": 1,
+  "text": "¿Con qué frecuencia revisas el avance de tus metas estratégicas?",
+  "help": "",
+  "options": [
+   "Nunca",
+   "Solo cuando hay crisis",
+   "Una vez al año",
+   "Trimestralmente",
+   "Mensualmente con el equipo directivo"
+  ]
+ },
+ {
+  "dim": 1,
+  "text": "¿Tus decisiones importantes están basadas en datos o en intuición?",
+  "help": "Ej.: subir un precio mirando tus números reales, no porque \"se siente que ya tocaba\".",
+  "options": [
+   "100% intuición",
+   "Mayormente intuición",
+   "Mitad y mitad",
+   "Mayormente datos",
+   "Casi siempre con datos y métricas concretas"
+  ]
+ },
+ {
+  "dim": 2,
+  "text": "¿Tienes un proceso de ventas documentado que tu equipo sigue?",
+  "help": "",
+  "options": [
+   "No hay proceso definido",
+   "Cada quien vende como puede",
+   "Hay lineamientos básicos verbales",
+   "Sí, documentado y parcialmente seguido",
+   "Sí, documentado con CRM y métricas de conversión"
+  ]
+ },
+ {
+  "dim": 2,
+  "text": "¿Conoces tu tasa de conversión de prospectos a clientes?",
+  "help": "De cada 10 personas que te piden cotización o preguntan, cuántas terminan comprando.",
+  "options": [
+   "No tengo idea",
+   "Aproximadamente, sin datos reales",
+   "Sí, la calculo mensualmente",
+   "Sí, la monitoreo semanalmente",
+   "Sí, en tiempo real con alertas"
+  ]
+ },
+ {
+  "dim": 2,
+  "text": "¿Puedes predecir tus ingresos del próximo mes con confianza?",
+  "help": "Si hoy puedes estimar con confianza cuánto vas a vender el mes que entra.",
+  "options": [
+   "No, cada mes es sorpresa total",
+   "Con muy poca certeza",
+   "Solo en meses estables",
+   "Casi siempre con ±20% de precisión",
+   "Siempre con alta precisión por mi pipeline"
+  ]
+ },
+ {
+  "dim": 2,
+  "text": "¿Tienes estrategias activas para retener y hacer crecer cuentas existentes?",
+  "help": "",
+  "options": [
+   "No, solo busco nuevos clientes",
+   "Muy ocasionalmente",
+   "Tengo algunas ideas sin estructura",
+   "Sí, con seguimiento básico",
+   "Sí, con programa formal de retención y upselling"
+  ]
+ },
+ {
+  "dim": 2,
+  "text": "¿Qué tan clara y consistente es tu propuesta de valor frente a la competencia?",
+  "help": "Lo que te hace diferente y por qué un cliente te elige a ti y no a otro proveedor.",
+  "options": [
+   "No tengo claro qué me diferencia",
+   "Tengo una idea pero no la comunico siempre igual",
+   "La tengo definida pero mi equipo no la transmite igual",
+   "Está clara y mi equipo la comunica de forma similar",
+   "Está documentada y se refleja en todo lo que comunicamos"
+  ]
+ },
+ {
+  "dim": 3,
+  "text": "¿Cada persona en tu equipo tiene un rol, responsabilidades y KPIs claros?",
+  "help": "KPI = el número con el que se mide si esa persona está haciendo bien su trabajo.",
+  "options": [
+   "Nadie tiene claridad de su rol",
+   "Solo los mandos altos",
+   "Algunos sí, otros no",
+   "La mayoría sí",
+   "Todo el equipo con descripción de puesto y KPIs"
+  ]
+ },
+ {
+  "dim": 3,
+  "text": "¿Tu empresa puede operar normalmente sin ti durante 2 semanas?",
+  "help": "",
+  "options": [
+   "Se caería todo",
+   "Habría crisis importantes",
+   "Funcionaría con dificultades",
+   "Funcionaría bastante bien",
+   "Opera igual o mejor — tengo equipo autónomo"
+  ]
+ },
+ {
+  "dim": 3,
+  "text": "¿Con qué frecuencia realizas evaluaciones de desempeño formales?",
+  "help": "",
+  "options": [
+   "Nunca",
+   "Solo cuando hay problemas",
+   "Una vez al año",
+   "Semestralmente",
+   "Trimestral o mensualmente con retroalimentación"
+  ]
+ },
+ {
+  "dim": 3,
+  "text": "¿Tienes un proceso de incorporación (onboarding) para nuevos empleados?",
+  "help": "",
+  "options": [
+   "No, aprenden solos",
+   "Les explico yo en persona sin estructura",
+   "Hay algo básico no documentado",
+   "Sí, documentado pero mejorable",
+   "Sí, proceso completo con recursos digitales"
+  ]
+ },
+ {
+  "dim": 4,
+  "text": "¿Tus procesos principales están documentados y actualizados?",
+  "help": "",
+  "options": [
+   "Ninguno está documentado",
+   "Menos del 25% está documentado",
+   "Entre el 25-50% documentado",
+   "Entre el 50-75% documentado",
+   "Más del 75% documentado y en uso real"
+  ]
+ },
+ {
+  "dim": 4,
+  "text": "¿Usas indicadores (KPIs) para medir la eficiencia operativa?",
+  "help": "Indicadores que te dicen si la operación va bien: tiempos de entrega, errores, retrabajos, etc.",
+  "options": [
+   "No uso ningún indicador",
+   "Solo métricas financieras básicas",
+   "Tengo algunos KPIs sin seguimiento regular",
+   "Sí, los reviso mensualmente",
+   "Sí, dashboard activo con alertas automáticas"
+  ]
+ },
+ {
+  "dim": 4,
+  "text": "¿Cuánto tiempo invierte tu equipo en tareas repetitivas que podrían automatizarse?",
+  "help": "Trabajo manual y repetitivo (capturar lo mismo dos veces, llenar a mano) que un sistema podría hacer solo.",
+  "options": [
+   "Más del 60% del tiempo",
+   "Entre 40-60% del tiempo",
+   "Entre 20-40% del tiempo",
+   "Entre 10-20% del tiempo",
+   "Menos del 10%, tenemos automatización activa"
+  ]
+ },
+ {
+  "dim": 4,
+  "text": "¿Podrías duplicar tu volumen de operaciones sin contratar más personal?",
+  "help": "",
+  "options": [
+   "Imposible, ya estamos saturados",
+   "Con mucha dificultad y caos",
+   "Quizás un 20% más",
+   "Sí, hasta un 50% más",
+   "Sí, nuestros sistemas escalan fácilmente"
+  ]
+ }
+]
