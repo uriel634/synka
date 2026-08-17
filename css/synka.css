@@ -372,8 +372,14 @@ p { max-width: var(--prosa); }
   transition: border-color 0.18s var(--ease), color 0.18s var(--ease);
 }
 .enlace-linea:hover { color: var(--teal-vivo); border-color: var(--teal-vivo); }
-.tema-claro .enlace-linea { color: var(--navy); border-color: var(--acero); }
-.tema-claro .enlace-linea:hover { color: var(--navy); border-color: var(--navy); }
+/* Sobre fondo claro hay que invertirlo o el texto queda blanco sobre blanco.
+   Se activa por la clase de sección, no solo por .tema-claro. */
+.tema-claro .enlace-linea,
+.seccion--arena .enlace-linea,
+.seccion--blanco .enlace-linea { color: var(--navy); border-color: var(--acero); }
+.tema-claro .enlace-linea:hover,
+.seccion--arena .enlace-linea:hover,
+.seccion--blanco .enlace-linea:hover { color: var(--navy); border-color: var(--navy); }
 
 .grupo-cta {
   display: flex;
@@ -1033,6 +1039,9 @@ p { max-width: var(--prosa); }
 .opcion-radio {
   position: relative;
   background: var(--blanco);
+  /* El color se declara: sin esto hereda el blanco de .seccion--hundida y el
+     texto de la opción queda blanco sobre blanco. */
+  color: var(--navy);
   display: flex;
   align-items: center;
   gap: 0.7rem;
