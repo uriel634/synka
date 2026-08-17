@@ -175,7 +175,7 @@ PLANTILLA = """<!DOCTYPE html>
 
 <title>{titulo_seo}</title>
 <meta name="description" content="{meta}">
-<link rel="canonical" href="{sitio}/soluciones/{slug}.html">
+<link rel="canonical" href="{sitio}/soluciones/{slug}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#002B49">
 
@@ -193,7 +193,7 @@ PLANTILLA = """<!DOCTYPE html>
 <meta property="og:site_name" content="SYNKA">
 <meta property="og:title" content="SYNKA {nombre} · {descriptor}">
 <meta property="og:description" content="{meta}">
-<meta property="og:url" content="{sitio}/soluciones/{slug}.html">
+<meta property="og:url" content="{sitio}/soluciones/{slug}">
 <meta property="og:image" content="{sitio}/assets/img/og-synka.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -211,7 +211,7 @@ PLANTILLA = """<!DOCTYPE html>
       "name": "SYNKA {nombre}",
       "serviceType": "{descriptor}",
       "description": "{meta}",
-      "url": "{sitio}/soluciones/{slug}.html",
+      "url": "{sitio}/soluciones/{slug}",
       "provider": {{
         "@type": "Organization",
         "name": "SYNKA",
@@ -224,7 +224,7 @@ PLANTILLA = """<!DOCTYPE html>
       "itemListElement": [
         {{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": "{sitio}/" }},
         {{ "@type": "ListItem", "position": 2, "name": "Soluciones", "item": "{sitio}/#soluciones" }},
-        {{ "@type": "ListItem", "position": 3, "name": "SYNKA {nombre}", "item": "{sitio}/soluciones/{slug}.html" }}
+        {{ "@type": "ListItem", "position": 3, "name": "SYNKA {nombre}", "item": "{sitio}/soluciones/{slug}" }}
       ]
     }}
   ]
@@ -239,18 +239,18 @@ PLANTILLA = """<!DOCTYPE html>
 
 <header class="header">
   <div class="wrap header__barra">
-    <a class="logotipo" href="../index.html" aria-label="SYNKA · Inicio">
+    <a class="logotipo" href="../index" aria-label="SYNKA · Inicio">
       {logo}
       <span class="logotipo__palabra">SYNKA</span>
     </a>
 
     <nav class="nav" aria-label="Principal">
       <ul class="nav__lista">
-        <li><a class="nav__enlace" href="../index.html#problema">El problema</a></li>
-        <li><a class="nav__enlace" href="../index.html#metodo">Método SYNKA</a></li>
-        <li><a class="nav__enlace" href="../index.html#soluciones">Soluciones</a></li>
-        <li><a class="nav__enlace" href="../index.html#nosotros">Nosotros</a></li>
-        <li><a class="nav__enlace" href="../index.html#diagnostico">Diagnóstico</a></li>
+        <li><a class="nav__enlace" href="/#problema">El problema</a></li>
+        <li><a class="nav__enlace" href="/#metodo">Método SYNKA</a></li>
+        <li><a class="nav__enlace" href="/#soluciones">Soluciones</a></li>
+        <li><a class="nav__enlace" href="/#nosotros">Nosotros</a></li>
+        <li><a class="nav__enlace" href="/#diagnostico">Diagnóstico</a></li>
       </ul>
       <a class="btn btn--primario" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="header">Solicitar diagnóstico</a>
     </nav>
@@ -264,11 +264,11 @@ PLANTILLA = """<!DOCTYPE html>
   <div class="wrap menu-movil" id="menu-movil" data-menu data-abierto="false">
     <nav aria-label="Principal, versión móvil">
       <ul>
-        <li><a href="../index.html#problema">El problema</a></li>
-        <li><a href="../index.html#metodo">Método SYNKA</a></li>
-        <li><a href="../index.html#soluciones">Soluciones</a></li>
-        <li><a href="../index.html#nosotros">Nosotros</a></li>
-        <li><a href="../index.html#diagnostico">Diagnóstico</a></li>
+        <li><a href="/#problema">El problema</a></li>
+        <li><a href="/#metodo">Método SYNKA</a></li>
+        <li><a href="/#soluciones">Soluciones</a></li>
+        <li><a href="/#nosotros">Nosotros</a></li>
+        <li><a href="/#diagnostico">Diagnóstico</a></li>
       </ul>
       <a class="btn btn--primario btn--bloque" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="menu_movil">Solicitar diagnóstico</a>
     </nav>
@@ -281,7 +281,7 @@ PLANTILLA = """<!DOCTYPE html>
   <div class="wrap hero__grid">
     <div>
       <nav class="eyebrow" aria-label="Ruta de navegación" style="margin-bottom:1.75rem">
-        <a href="../index.html#soluciones" style="color:inherit">Soluciones</a>
+        <a href="/#soluciones" style="color:inherit">Soluciones</a>
       </nav>
 
       <p class="marca-division" style="font-size:clamp(1.4rem,4vw,1.9rem); margin-bottom:1.5rem; color:var(--blanco)">
@@ -294,7 +294,7 @@ PLANTILLA = """<!DOCTYPE html>
 
       <div class="grupo-cta" style="margin-top:clamp(2rem,5vw,2.75rem)">
         <a class="btn btn--primario" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="hero_{slug}">Solicita tu diagnóstico</a>
-        <a class="enlace-linea" href="../index.html#metodo" data-cta="conoce_metodo" data-seccion="hero_{slug}">Conoce el Método SYNKA {flecha}</a>
+        <a class="enlace-linea" href="/#metodo" data-cta="conoce_metodo" data-seccion="hero_{slug}">Conoce el Método SYNKA {flecha}</a>
       </div>
     </div>
 
@@ -352,7 +352,7 @@ PLANTILLA = """<!DOCTYPE html>
     <p class="lead" style="margin-top:1.25rem">Empieza por el diagnóstico. Es una sesión de
       trabajo con el dueño y las áreas clave, sobre tu operación real.</p>
     <div class="grupo-cta" style="justify-content:center; margin-top:2.25rem">
-      <a class="btn btn--primario" href="../index.html#solicitar" data-cta="solicitar_diagnostico" data-seccion="cta_final_{slug}">Solicita tu diagnóstico</a>
+      <a class="btn btn--primario" href="/#solicitar" data-cta="solicitar_diagnostico" data-seccion="cta_final_{slug}">Solicita tu diagnóstico</a>
       <a class="enlace-linea" href="{instrumento_url}" data-cta="instrumento" data-seccion="cta_final_{slug}">{instrumento_texto} {flecha}</a>
     </div>
   </div>
@@ -364,7 +364,7 @@ PLANTILLA = """<!DOCTYPE html>
   <div class="wrap">
     <div class="footer__grid">
       <div>
-        <a class="logotipo" href="../index.html" aria-label="SYNKA · Inicio">
+        <a class="logotipo" href="../index" aria-label="SYNKA · Inicio">
           {logo}
           <span class="logotipo__palabra">SYNKA</span>
         </a>
@@ -379,11 +379,11 @@ PLANTILLA = """<!DOCTYPE html>
       <div>
         <h4>Navegación</h4>
         <ul>
-          <li><a href="../index.html#problema">El problema</a></li>
-          <li><a href="../index.html#metodo">Método SYNKA</a></li>
-          <li><a href="../index.html#nosotros">Nosotros</a></li>
-          <li><a href="../diagnostico/radar.html">Radar SYNKA</a></li>
-          <li><a href="../diagnostico/comercial.html">Diagnóstico Comercial</a></li>
+          <li><a href="/#problema">El problema</a></li>
+          <li><a href="/#metodo">Método SYNKA</a></li>
+          <li><a href="/#nosotros">Nosotros</a></li>
+          <li><a href="../diagnostico/radar">Radar SYNKA</a></li>
+          <li><a href="../diagnostico/comercial">Diagnóstico Comercial</a></li>
           <li><a href="mailto:hola@synka.mx" data-correo data-rellena>hola@synka.mx</a></li>
         </ul>
       </div>
@@ -423,7 +423,7 @@ def construir(d, todas):
     )
 
     otras = "\n".join(
-        '      <a class="division aparece" data-rama="{s}" href="{s}.html" data-cta="division" data-seccion="cruzada">\n'
+        '      <a class="division aparece" data-rama="{s}" href="{s}" data-cta="division" data-seccion="cruzada">\n'
         '        <svg class="division__signo" viewBox="0 0 100 100" style="color:var(--rama)" aria-hidden="true" focusable="false">\n'
         '          <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>\n'
         '          <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="currentColor"/></g>\n'
@@ -439,16 +439,16 @@ def construir(d, todas):
     )
 
     pie = "\n".join(
-        '          <li><a href="{}.html">SYNKA {}</a></li>'.format(o["slug"], o["nombre"].capitalize())
+        '          <li><a href="{}">SYNKA {}</a></li>'.format(o["slug"], o["nombre"].capitalize())
         for o in todas
     )
 
     # La única división con instrumento propio hoy es COMERCIAL. El resto
     # manda al radar, que es el que mide las seis a la vez.
     if d["slug"] == "comercial":
-        inst_url, inst_txt = "../diagnostico/comercial.html", "Hacer el Diagnóstico Comercial"
+        inst_url, inst_txt = "/diagnostico/comercial", "Hacer el Diagnóstico Comercial"
     else:
-        inst_url, inst_txt = "../diagnostico/radar.html", "Medir esta división en el Radar SYNKA"
+        inst_url, inst_txt = "/diagnostico/radar", "Medir esta división en el Radar SYNKA"
 
     return PLANTILLA.format(
         instrumento_url=inst_url,
@@ -476,9 +476,9 @@ def construir(d, todas):
 def sitemap():
     hoy = datetime.date.today().isoformat()
     urls = [(SITIO + "/", "1.0")]
-    urls += [("{}/soluciones/{}.html".format(SITIO, d["slug"]), "0.8") for d in DIVISIONES]
-    urls += [("{}/diagnostico/radar.html".format(SITIO), "0.9"),
-             ("{}/diagnostico/comercial.html".format(SITIO), "0.9")]
+    urls += [("{}/soluciones/{}".format(SITIO, d["slug"]), "0.8") for d in DIVISIONES]
+    urls += [("{}/diagnostico/radar".format(SITIO), "0.9"),
+             ("{}/diagnostico/comercial".format(SITIO), "0.9")]
     filas = "\n".join(
         "  <url>\n    <loc>{}</loc>\n    <lastmod>{}</lastmod>\n"
         "    <changefreq>monthly</changefreq>\n    <priority>{}</priority>\n  </url>".format(u, hoy, p)

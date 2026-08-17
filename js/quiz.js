@@ -22,17 +22,17 @@
   /* Metadatos de las seis divisiones. Los colores son los valores negativos
      del manual (cap. 09): el resultado se pinta sobre navy. */
   var DIVISIONES = {
-    estructura: { n: 'ESTRUCTURA', c: '#4FA3F0', url: '../soluciones/estructura.html',
+    estructura: { n: 'ESTRUCTURA', c: '#4FA3F0', url: '/soluciones/estructura',
                   d: 'Organigrama, roles y niveles de decisión.' },
-    comercial:  { n: 'COMERCIAL',  c: '#F0845B', url: '../soluciones/comercial.html',
+    comercial:  { n: 'COMERCIAL',  c: '#F0845B', url: '/soluciones/comercial',
                   d: 'Estructura de ventas, pipeline y cuotas.' },
-    procesos:   { n: 'PROCESOS',   c: '#00C9B7', url: '../soluciones/procesos.html',
+    procesos:   { n: 'PROCESOS',   c: '#00C9B7', url: '/soluciones/procesos',
                   d: 'SOP, POE y mapeo de flujos.' },
-    operacion:  { n: 'OPERACIÓN',  c: '#9C86F5', url: '../soluciones/operacion.html',
+    operacion:  { n: 'OPERACIÓN',  c: '#9C86F5', url: '/soluciones/operacion',
                   d: 'Ejecución diaria y estándares de servicio.' },
-    personas:   { n: 'PERSONAS',   c: '#D9AC55', url: '../soluciones/personas.html',
+    personas:   { n: 'PERSONAS',   c: '#D9AC55', url: '/soluciones/personas',
                   d: 'Perfiles, evaluación y desarrollo.' },
-    control:    { n: 'CONTROL',    c: '#39C4A6', url: '../soluciones/control.html',
+    control:    { n: 'CONTROL',    c: '#39C4A6', url: '/soluciones/control',
                   d: 'Indicadores, tablero y auditoría.' }
   };
 

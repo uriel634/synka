@@ -63,7 +63,7 @@ INSTRUMENTOS = [
                        "que se resuelve.",
         "cruzada": ("Ya sabes que el problema es comercial",
                     "Si el radar señala COMERCIAL, el siguiente paso es el diagnóstico de esa división: seis áreas, diez preguntas.",
-                    "comercial.html", "Ir al Diagnóstico Comercial"),
+                    "comercial", "Ir al Diagnóstico Comercial"),
     },
     {
         "slug": "comercial",
@@ -95,7 +95,7 @@ INSTRUMENTOS = [
                        "que tú vendas.",
         "cruzada": ("¿Y el resto de la empresa?",
                     "Si quieres el mapa completo de las seis divisiones, empieza por el radar.",
-                    "radar.html", "Ir al Radar SYNKA"),
+                    "radar", "Ir al Radar SYNKA"),
     },
 ]
 
@@ -107,7 +107,7 @@ PLANTILLA = """<!DOCTYPE html>
 
 <title>{titulo_seo}</title>
 <meta name="description" content="{meta}">
-<link rel="canonical" href="{sitio}/diagnostico/{slug}.html">
+<link rel="canonical" href="{sitio}/diagnostico/{slug}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#002B49">
 
@@ -125,7 +125,7 @@ PLANTILLA = """<!DOCTYPE html>
 <meta property="og:site_name" content="SYNKA">
 <meta property="og:title" content="{titulo_seo}">
 <meta property="og:description" content="{meta}">
-<meta property="og:url" content="{sitio}/diagnostico/{slug}.html">
+<meta property="og:url" content="{sitio}/diagnostico/{slug}">
 <meta property="og:image" content="{sitio}/assets/img/og-synka.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -143,7 +143,7 @@ PLANTILLA = """<!DOCTYPE html>
       "name": "{nombre_plano}",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "url": "{sitio}/diagnostico/{slug}.html",
+      "url": "{sitio}/diagnostico/{slug}",
       "description": "{meta}",
       "inLanguage": "es-MX",
       "isAccessibleForFree": true,
@@ -155,7 +155,7 @@ PLANTILLA = """<!DOCTYPE html>
       "itemListElement": [
         {{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": "{sitio}/" }},
         {{ "@type": "ListItem", "position": 2, "name": "Diagnóstico", "item": "{sitio}/#diagnostico" }},
-        {{ "@type": "ListItem", "position": 3, "name": "{nombre_plano}", "item": "{sitio}/diagnostico/{slug}.html" }}
+        {{ "@type": "ListItem", "position": 3, "name": "{nombre_plano}", "item": "{sitio}/diagnostico/{slug}" }}
       ]
     }}
   ]
@@ -170,19 +170,19 @@ PLANTILLA = """<!DOCTYPE html>
 
 <header class="header">
   <div class="wrap header__barra">
-    <a class="logotipo" href="../index.html" aria-label="SYNKA · Inicio">
+    <a class="logotipo" href="../index" aria-label="SYNKA · Inicio">
       {logo}
       <span class="logotipo__palabra">SYNKA</span>
     </a>
     <nav class="nav" aria-label="Principal">
       <ul class="nav__lista">
-        <li><a class="nav__enlace" href="../index.html#problema">El problema</a></li>
-        <li><a class="nav__enlace" href="../index.html#metodo">Método SYNKA</a></li>
-        <li><a class="nav__enlace" href="../index.html#soluciones">Soluciones</a></li>
-        <li><a class="nav__enlace" href="../index.html#nosotros">Nosotros</a></li>
-        <li><a class="nav__enlace" href="../index.html#diagnostico">Diagnóstico</a></li>
+        <li><a class="nav__enlace" href="/#problema">El problema</a></li>
+        <li><a class="nav__enlace" href="/#metodo">Método SYNKA</a></li>
+        <li><a class="nav__enlace" href="/#soluciones">Soluciones</a></li>
+        <li><a class="nav__enlace" href="/#nosotros">Nosotros</a></li>
+        <li><a class="nav__enlace" href="/#diagnostico">Diagnóstico</a></li>
       </ul>
-      <a class="btn btn--primario" href="../index.html#solicitar" data-cta="solicitar_diagnostico" data-seccion="header">Solicitar diagnóstico</a>
+      <a class="btn btn--primario" href="/#solicitar" data-cta="solicitar_diagnostico" data-seccion="header">Solicitar diagnóstico</a>
     </nav>
     <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -192,13 +192,13 @@ PLANTILLA = """<!DOCTYPE html>
   <div class="wrap menu-movil" id="menu-movil" data-menu data-abierto="false">
     <nav aria-label="Principal, versión móvil">
       <ul>
-        <li><a href="../index.html#problema">El problema</a></li>
-        <li><a href="../index.html#metodo">Método SYNKA</a></li>
-        <li><a href="../index.html#soluciones">Soluciones</a></li>
-        <li><a href="../index.html#nosotros">Nosotros</a></li>
-        <li><a href="../index.html#diagnostico">Diagnóstico</a></li>
+        <li><a href="/#problema">El problema</a></li>
+        <li><a href="/#metodo">Método SYNKA</a></li>
+        <li><a href="/#soluciones">Soluciones</a></li>
+        <li><a href="/#nosotros">Nosotros</a></li>
+        <li><a href="/#diagnostico">Diagnóstico</a></li>
       </ul>
-      <a class="btn btn--primario btn--bloque" href="../index.html#solicitar" data-cta="solicitar_diagnostico" data-seccion="menu_movil">Solicitar diagnóstico</a>
+      <a class="btn btn--primario btn--bloque" href="/#solicitar" data-cta="solicitar_diagnostico" data-seccion="menu_movil">Solicitar diagnóstico</a>
     </nav>
   </div>
 </header>
@@ -237,7 +237,7 @@ PLANTILLA = """<!DOCTYPE html>
         <h2 style="margin-bottom:1rem">Autoevaluación</h2>
         <p style="margin-bottom:1.5rem">Este instrumento necesita JavaScript. Puedes responder
           estas mismas preguntas con nosotros durante el diagnóstico.</p>
-        <a class="btn btn--primario" href="../index.html#solicitar" data-cta="solicitar_diagnostico" data-seccion="{slug}_sin_js">Solicitar diagnóstico</a>
+        <a class="btn btn--primario" href="/#solicitar" data-cta="solicitar_diagnostico" data-seccion="{slug}_sin_js">Solicitar diagnóstico</a>
       </div>
 
       <div class="diag__cuerpo" data-vista-pregunta hidden>
@@ -286,8 +286,8 @@ PLANTILLA = """<!DOCTYPE html>
     <h2>{cierre}</h2>
     <p class="lead" style="margin-top:1.25rem">{cierre_lead}</p>
     <div class="grupo-cta" style="justify-content:center; margin-top:2.25rem">
-      <a class="btn btn--primario" href="../index.html#solicitar" data-cta="solicitar_diagnostico" data-seccion="cta_final_{slug}">Solicita tu diagnóstico</a>
-      <a class="enlace-linea" href="../index.html#soluciones" data-cta="ver_soluciones" data-seccion="cta_final_{slug}">Ver las seis divisiones {flecha}</a>
+      <a class="btn btn--primario" href="/#solicitar" data-cta="solicitar_diagnostico" data-seccion="cta_final_{slug}">Solicita tu diagnóstico</a>
+      <a class="enlace-linea" href="/#soluciones" data-cta="ver_soluciones" data-seccion="cta_final_{slug}">Ver las seis divisiones {flecha}</a>
     </div>
   </div>
 </section>
@@ -298,7 +298,7 @@ PLANTILLA = """<!DOCTYPE html>
   <div class="wrap">
     <div class="footer__grid">
       <div>
-        <a class="logotipo" href="../index.html" aria-label="SYNKA · Inicio">
+        <a class="logotipo" href="../index" aria-label="SYNKA · Inicio">
           {logo}
           <span class="logotipo__palabra">SYNKA</span>
         </a>
@@ -307,17 +307,17 @@ PLANTILLA = """<!DOCTYPE html>
       <div>
         <h4>Diagnóstico</h4>
         <ul>
-          <li><a href="../index.html#diagnostico">Autoevaluación de dependencia</a></li>
-          <li><a href="radar.html">Radar SYNKA</a></li>
-          <li><a href="comercial.html">Diagnóstico Comercial</a></li>
+          <li><a href="/#diagnostico">Autoevaluación de dependencia</a></li>
+          <li><a href="radar">Radar SYNKA</a></li>
+          <li><a href="comercial">Diagnóstico Comercial</a></li>
         </ul>
       </div>
       <div>
         <h4>Navegación</h4>
         <ul>
-          <li><a href="../index.html#metodo">Método SYNKA</a></li>
-          <li><a href="../index.html#soluciones">Soluciones</a></li>
-          <li><a href="../index.html#nosotros">Nosotros</a></li>
+          <li><a href="/#metodo">Método SYNKA</a></li>
+          <li><a href="/#soluciones">Soluciones</a></li>
+          <li><a href="/#nosotros">Nosotros</a></li>
           <li><a href="mailto:hola@synka.mx" data-correo data-rellena>hola@synka.mx</a></li>
         </ul>
       </div>

@@ -201,12 +201,12 @@
 
   /* Los valores negativos del manual: el panel de foco va sobre navy. */
   var RAMAS = {
-    estructura: { n: 'ESTRUCTURA', color: 'var(--div-estructura-neg)', d: 'Organigrama, roles y niveles de decisión que no regresan a ti.', url: 'soluciones/estructura.html' },
-    comercial:  { n: 'COMERCIAL',  color: 'var(--div-comercial-neg)',  d: 'Estructura de ventas, pipeline y cuotas que no dependen del dueño vendiendo.', url: 'soluciones/comercial.html' },
-    procesos:   { n: 'PROCESOS',   color: 'var(--div-procesos-neg)',   d: 'SOP, POE y mapeo de flujos que cualquiera puede ejecutar.', url: 'soluciones/procesos.html' },
-    operacion:  { n: 'OPERACIÓN',  color: 'var(--div-operacion-neg)',  d: 'Ejecución diaria y estándares de servicio que se sostienen sin supervisión.', url: 'soluciones/operacion.html' },
-    personas:   { n: 'PERSONAS',   color: 'var(--div-personas-neg)',   d: 'Perfiles de puesto, evaluación y desarrollo del equipo.', url: 'soluciones/personas.html' },
-    control:    { n: 'CONTROL',    color: 'var(--div-control-neg)',    d: 'Indicadores, tablero y auditoría para saber cómo va la empresa sin preguntar.', url: 'soluciones/control.html' }
+    estructura: { n: 'ESTRUCTURA', color: 'var(--div-estructura-neg)', d: 'Organigrama, roles y niveles de decisión que no regresan a ti.', url: '/soluciones/estructura' },
+    comercial:  { n: 'COMERCIAL',  color: 'var(--div-comercial-neg)',  d: 'Estructura de ventas, pipeline y cuotas que no dependen del dueño vendiendo.', url: '/soluciones/comercial' },
+    procesos:   { n: 'PROCESOS',   color: 'var(--div-procesos-neg)',   d: 'SOP, POE y mapeo de flujos que cualquiera puede ejecutar.', url: '/soluciones/procesos' },
+    operacion:  { n: 'OPERACIÓN',  color: 'var(--div-operacion-neg)',  d: 'Ejecución diaria y estándares de servicio que se sostienen sin supervisión.', url: '/soluciones/operacion' },
+    personas:   { n: 'PERSONAS',   color: 'var(--div-personas-neg)',   d: 'Perfiles de puesto, evaluación y desarrollo del equipo.', url: '/soluciones/personas' },
+    control:    { n: 'CONTROL',    color: 'var(--div-control-neg)',    d: 'Indicadores, tablero y auditoría para saber cómo va la empresa sin preguntar.', url: '/soluciones/control' }
   };
 
   var NIVELES = {
