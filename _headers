@@ -1,0 +1,33 @@
+# Cloudflare Pages — cabeceras por ruta
+# El servidor sirve todo con max-age=0 por defecto: eso obliga a revalidar
+# incluso las tipografías, que no cambian nunca. Aquí se corrige.
+
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Tipografías e imágenes: contenido inmutable, se cachea un año.
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/logo/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS y JS cambian con cada despliegue, pero no en cada visita.
+# Un día de caché con revalidación posterior.
+/css/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/js/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# El HTML sí debe revalidarse: es lo que cambia cuando se publica.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

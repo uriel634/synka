@@ -197,10 +197,12 @@ PLANTILLA = """<!DOCTYPE html>
 <meta property="og:image" content="{sitio}/assets/img/og-synka.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SYNKA · Sistemas que hacen funcionar tu empresa">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SYNKA {nombre} · {descriptor}">
 <meta name="twitter:description" content="{meta}">
 <meta name="twitter:image" content="{sitio}/assets/img/og-synka.png">
+<meta name="twitter:image:alt" content="SYNKA · Sistemas que hacen funcionar tu empresa">
 
 <script type="application/ld+json">
 {{
