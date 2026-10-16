@@ -14,7 +14,11 @@ No se declara ningún resultado, cifra ni cliente.
 """
 
 import os
+import sys
 import datetime
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from blog_articulos import ARTICULOS  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITIO = "https://synka.mx"
@@ -486,6 +490,15 @@ def sitemap():
         "    <changefreq>monthly</changefreq>\n    <priority>{}</priority>\n  </url>".format(u, hoy, p)
         for u, p in urls
     )
+    # Blog: fechas de publicación propias, no la de hoy (ver tools/gen-blog.py).
+    filas += "\n" + "\n".join(
+        "  <url>\n    <loc>{}/blog/{}</loc>\n    <lastmod>{}</lastmod>\n"
+        "    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>".format(SITIO, a["slug"], a["fecha"])
+        for a in ARTICULOS
+    )
+    filas += ("\n  <url>\n    <loc>{}/blog</loc>\n    <lastmod>{}</lastmod>\n"
+              "    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>"
+              .format(SITIO, ARTICULOS[0]["fecha"]))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + filas + "\n</urlset>\n")
