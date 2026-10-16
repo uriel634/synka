@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Blog SYNKA · Estructura, procesos y control para PyMEs</title>
+<meta name="description" content="Artículos para dueños de PyMEs sobre cómo dejar de ser el cuello de botella: dependencia del dueño, delegación, estructura, procesos y control.">
+<link rel="canonical" href="https://synka.mx/blog/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#002B49">
+
+<link rel="preload" href="../assets/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/plexmono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/synka.css">
+
+<link rel="icon" href="../assets/logo/favicon-32.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/img/avatar-1024.png">
+<link rel="manifest" href="../site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="SYNKA">
+<meta property="og:title" content="Blog SYNKA · Estructura, procesos y control para PyMEs">
+<meta property="og:description" content="Artículos para dueños de PyMEs sobre cómo dejar de ser el cuello de botella: dependencia del dueño, delegación, estructura, procesos y control.">
+<meta property="og:url" content="https://synka.mx/blog/">
+<meta property="og:image" content="https://synka.mx/assets/img/og-synka.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SYNKA · Sistemas que hacen funcionar tu empresa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog SYNKA · Estructura, procesos y control para PyMEs">
+<meta name="twitter:description" content="Artículos para dueños de PyMEs sobre cómo dejar de ser el cuello de botella: dependencia del dueño, delegación, estructura, procesos y control.">
+<meta name="twitter:image" content="https://synka.mx/assets/img/og-synka.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": "Blog SYNKA · Estructura, procesos y control para PyMEs",
+      "url": "https://synka.mx/blog/",
+      "description": "Artículos para dueños de PyMEs sobre cómo dejar de ser el cuello de botella: dependencia del dueño, delegación, estructura, procesos y control.",
+      "inLanguage": "es-MX",
+      "publisher": {
+        "@type": "Organization",
+        "name": "SYNKA",
+        "url": "https://synka.mx/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://synka.mx/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://synka.mx/blog/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<script src="../js/config.js"></script>
+</head>
+
+<body>
+<a class="salta-al-contenido" href="#contenido">Saltar al contenido</a>
+
+<header class="header">
+  <div class="wrap header__barra">
+    <a class="logotipo" href="/" aria-label="SYNKA · Inicio">
+      <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+      </svg>
+      <span class="logotipo__palabra">SYNKA</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a class="nav__enlace" href="/#problema">El problema</a></li>
+        <li><a class="nav__enlace" href="/#metodo">Método SYNKA</a></li>
+        <li><a class="nav__enlace" href="/#soluciones">Soluciones</a></li>
+        <li><a class="nav__enlace" href="/#nosotros">Nosotros</a></li>
+        <li><a class="nav__enlace" href="/#diagnostico">Diagnóstico</a></li>
+      </ul>
+      <a class="btn btn--primario" href="/#solicitar" data-cta="solicitar_diagnostico" data-seccion="header">Solicitar diagnóstico</a>
+    </nav>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="progreso" data-progreso aria-hidden="true"></span>
+  </div>
+  <div class="wrap menu-movil" id="menu-movil" data-menu data-abierto="false">
+    <nav aria-label="Principal, versión móvil">
+      <ul>
+        <li><a href="/#problema">El problema</a></li>
+        <li><a href="/#metodo">Método SYNKA</a></li>
+        <li><a href="/#soluciones">Soluciones</a></li>
+        <li><a href="/#nosotros">Nosotros</a></li>
+        <li><a href="/#diagnostico">Diagnóstico</a></li>
+      </ul>
+      <a class="btn btn--primario btn--bloque" href="/#solicitar" data-cta="solicitar_diagnostico" data-seccion="menu_movil">Solicitar diagnóstico</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="hero seccion--navy">
+  <div class="wrap">
+    <p class="eyebrow">Blog</p>
+    <h1>Cómo lograr que tu empresa funcione sin depender de ti</h1>
+  </div>
+</section>
+
+<section class="seccion seccion--arena">
+  <div class="wrap" style="max-width:46rem">
+    <h2><a href="/blog/empresa-que-depende-del-dueno">¿Tu empresa depende de ti? Por qué eso tiene un límite</a></h2>
+    <p>Cuando todo pasa por el dueño, tu tiempo es el techo de la empresa. Señales, causas y por dónde empezar.</p>
+    <h2><a href="/blog/como-delegar-en-mi-empresa">Cómo empezar a delegar sin que todo se caiga</a></h2>
+    <p>Seis pasos para delegar en tu PyME: qué delegar primero, cómo definir el margen de decisión y cómo revisar resultados.</p>
+    <p style="margin-top:2.5rem">¿Quieres saber dónde se concentra la dependencia en tu empresa? <a class="enlace-linea" href="/diagnostico/radar">Haz el Radar SYNKA</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logotipo" href="/" aria-label="SYNKA · Inicio">
+          <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <g><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(90 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(180 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+        <g transform="rotate(270 50 50)"><polygon points="36,50 8,22 8,39 19,50" fill="#FFFFFF"/><polygon points="36,50 8,78 8,61 19,50" fill="#00C9B7"/></g>
+      </svg>
+          <span class="logotipo__palabra">SYNKA</span>
+        </a>
+        <p class="footer__descriptor">Sistemas que hacen funcionar tu empresa</p>
+      </div>
+      <div>
+        <h4>Diagnóstico</h4>
+        <ul>
+          <li><a href="/#diagnostico">Autoevaluación de dependencia</a></li>
+          <li><a href="/diagnostico/radar">Radar SYNKA</a></li>
+          <li><a href="/diagnostico/comercial">Diagnóstico Comercial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="/#metodo">Método SYNKA</a></li>
+          <li><a href="/#soluciones">Soluciones</a></li>
+          <li><a href="/#nosotros">Nosotros</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="mailto:hola@synka.mx" data-correo data-rellena>hola@synka.mx</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>&copy; <span id="anio">2026</span> SYNKA</span>
+      <span>Todo funcionando como uno</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+<script src="../js/synka.js" defer></script>
+</body>
+</html>

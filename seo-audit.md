@@ -227,3 +227,15 @@ for p in "" soluciones/estructura soluciones/comercial soluciones/procesos \
   curl -s "https://synka.mx/$p" | grep -o "<title>[^<]*</title>"
 done
 ```
+
+---
+
+## 8 · Actualización 2026-10-16 — capa de contenido y búsqueda con IA
+
+Hecho en código:
+- Blog: `/blog/` (índice) y dos artículos, enlazados desde el pie de todas las páginas y con enlaces internos a las soluciones y al Radar.
+- Schema: BlogPosting con autor Person (Uriel Vargas), FAQPage en el artículo de delegación, nodo Person en la portada, CollectionPage en el índice.
+- `llms.txt` con resumen del sitio y sus URLs clave; `robots.txt` permite explícitamente GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot y Google-Extended.
+- Teléfono del JSON-LD corregido a +525528994084.
+
+Pendiente (requiere cuentas o decisiones del cliente): Search Console + sitemap, Perfil de Empresa en Google, `sameAs`/LinkedIn, teléfono y WhatsApp en `js/config.js`, retiro de los sitios VESTRA, enlaces entrantes, más artículos (uno por división).
