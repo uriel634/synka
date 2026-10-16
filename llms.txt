@@ -1,0 +1,22 @@
+# SYNKA
+
+> Consultoría para PyMEs en México que convierte negocios que dependen del dueño en empresas que funcionan con estructura, procesos y control. Eslogan: «Sistemas que hacen funcionar tu empresa».
+
+SYNKA trabaja la empresa completa en seis divisiones y las instala, no solo entrega documentos. Dirección: Uriel Vargas. Contacto: contacto@synka.mx.
+
+## Soluciones
+- [SYNKA Estructura](https://synka.mx/soluciones/estructura): organigrama real, roles definidos y niveles de decisión.
+- [SYNKA Comercial](https://synka.mx/soluciones/comercial): estructura de ventas, pipeline y cuotas.
+- [SYNKA Procesos](https://synka.mx/soluciones/procesos): estandarización y documentación de procesos.
+- [SYNKA Operación](https://synka.mx/soluciones/operacion): funcionamiento y ejecución diaria.
+- [SYNKA Personas](https://synka.mx/soluciones/personas): responsabilidades, desempeño y equipo.
+- [SYNKA Control](https://synka.mx/soluciones/control): indicadores y toma de decisiones.
+
+## Diagnósticos gratuitos
+- [Radar SYNKA](https://synka.mx/diagnostico/radar): 21 preguntas que miden dónde se concentra la dependencia del dueño.
+- [Diagnóstico Comercial](https://synka.mx/diagnostico/comercial): evaluación de la dependencia en el área de ventas.
+
+## Blog
+- [Blog](https://synka.mx/blog/): artículos sobre dependencia del dueño, delegación, estructura y procesos.
+- [¿Tu empresa depende de ti? Por qué eso tiene un límite](https://synka.mx/blog/empresa-que-depende-del-dueno)
+- [Cómo empezar a delegar sin que todo se caiga](https://synka.mx/blog/como-delegar-en-mi-empresa)

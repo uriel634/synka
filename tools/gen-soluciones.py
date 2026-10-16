@@ -384,6 +384,7 @@ PLANTILLA = """<!DOCTYPE html>
           <li><a href="/#problema">El problema</a></li>
           <li><a href="/#metodo">Método SYNKA</a></li>
           <li><a href="/#nosotros">Nosotros</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="../diagnostico/radar">Radar SYNKA</a></li>
           <li><a href="../diagnostico/comercial">Diagnóstico Comercial</a></li>
           <li><a href="mailto:hola@synka.mx" data-correo data-rellena>hola@synka.mx</a></li>
