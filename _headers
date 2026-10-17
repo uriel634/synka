@@ -20,13 +20,14 @@
 /assets/logo/*
   Cache-Control: public, max-age=31536000, immutable
 
-# CSS y JS cambian con cada despliegue, pero no en cada visita.
-# Un día de caché con revalidación posterior.
+# CSS y JS cambian con cada despliegue (config.js incluye el teléfono y el
+# formulario). Se revalidan en cada visita: si no cambiaron, el servidor
+# responde 304 sin reenviar el archivo, y si cambiaron se ve al instante.
 /css/*
-  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Cache-Control: public, max-age=0, must-revalidate
 
 /js/*
-  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Cache-Control: public, max-age=0, must-revalidate
 
 # El HTML sí debe revalidarse: es lo que cambia cuando se publica.
 /*.html
