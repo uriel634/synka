@@ -1,0 +1,340 @@
+/* ============================================================================
+   SYNKA · Blog
+   Se carga después de synka.css y solo en /blog/. Reutiliza sus variables.
+   ========================================================================== */
+
+/* Cabecera del artículo ---------------------------------------------------- */
+
+.blog-hero {
+  padding-block: clamp(3rem, 7vw, 6rem) clamp(3rem, 7vw, 5.5rem);
+}
+.blog-hero h1 {
+  max-width: 22ch;
+  font-size: clamp(2rem, 5.6vw, 3.6rem);
+  margin-bottom: 1.25rem;
+}
+.blog-hero::before {
+  /* Isotipo gigante, apenas visible: da profundidad sin cargar ninguna imagen */
+  content: '';
+  position: absolute;
+  right: -8%;
+  top: 50%;
+  width: clamp(18rem, 46vw, 34rem);
+  aspect-ratio: 1;
+  transform: translateY(-50%);
+  opacity: 0.55;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg id='b'%3E%3Cpolygon points='36,50 8,22 8,39 19,50' fill='%23fff' fill-opacity='.06'/%3E%3Cpolygon points='36,50 8,78 8,61 19,50' fill='%2300C9B7' fill-opacity='.14'/%3E%3C/g%3E%3Cuse href='%23b' transform='rotate(90 50 50)'/%3E%3Cuse href='%23b' transform='rotate(180 50 50)'/%3E%3Cuse href='%23b' transform='rotate(270 50 50)'/%3E%3C/svg%3E") center / contain no-repeat;
+  pointer-events: none;
+}
+.blog-meta {
+  font-family: var(--f-mono);
+  font-size: var(--t-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sobre-navy-2);
+}
+.blog-meta span + span::before { content: '·'; margin-inline: 0.75em; }
+
+/* Cuerpo del artículo ------------------------------------------------------ */
+
+.prosa-blog { color: var(--navy); font-size: 1.0625rem; line-height: 1.7; }
+.prosa-blog > p { max-width: none; margin-bottom: 1.15rem; }
+.prosa-blog .lead {
+  font-size: var(--t-lead);
+  line-height: 1.55;
+  margin-bottom: 1.75rem;
+}
+.prosa-blog h2 {
+  margin: 2.75rem 0 1rem;
+  font-size: clamp(1.45rem, 3.6vw, 1.9rem);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  max-width: none;
+  text-wrap: pretty;
+}
+.prosa-blog h3 {
+  margin: 0;
+  font-size: 1.0625rem;
+  letter-spacing: 0;
+}
+
+/* Enlaces dentro del texto: el teal vivo no se lee sobre fondo claro */
+.prosa-blog a:not(.btn):not(.enlace-linea) {
+  color: #0E7A66;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.prosa-blog a:not(.btn):not(.enlace-linea):hover { color: var(--navy); }
+
+/* Listas: synka.css las deja sin viñetas */
+.prosa-blog ul,
+.prosa-blog ol { margin: 0 0 1.5rem; display: grid; gap: 0.7rem; }
+.prosa-blog ul li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+.prosa-blog ul li::before {
+  content: '';
+  position: absolute;
+  left: 0.2rem;
+  top: 0.62em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--teal);
+  transform: rotate(45deg); /* el rombo de la identidad */
+}
+.prosa-blog ol { counter-reset: n; }
+.prosa-blog ol li {
+  position: relative;
+  padding-left: 2.6rem;
+  counter-increment: n;
+}
+.prosa-blog ol li::before {
+  content: counter(n);
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  color: var(--blanco);
+  background: var(--navy);
+}
+
+/* Resumen destacado --------------------------------------------------------- */
+
+.resumen {
+  margin: 0 0 2.25rem;
+  padding: 1.4rem 1.5rem 1.5rem;
+  background: var(--blanco);
+  border-left: 4px solid var(--teal);
+}
+.resumen__rotulo {
+  margin-bottom: 0.5rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--acero);
+}
+.resumen p:last-child { margin: 0; max-width: none; }
+
+/* Títulos de paso: "Paso 3" con número grande ------------------------------ */
+
+.prosa-blog h2.bpaso {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.9rem;
+}
+.bpaso__n {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-family: var(--f-mono);
+  font-size: 1.15rem;
+  color: var(--blanco);
+  background: var(--navy);
+}
+
+/* Diagramas ----------------------------------------------------------------- */
+
+.dg { margin: 2rem 0 2.25rem; }
+.dg figcaption {
+  margin-top: 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--acero);
+}
+
+/* Diagrama 1 · Hoy vs. con sistema (SVG) */
+.dg-par { display: grid; gap: 1.25rem; }
+.dg-par figure { margin: 0; background: var(--blanco); padding: 1rem 1rem 0.75rem; }
+.dg-par .dg-titulo {
+  margin-bottom: 0.4rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--acero);
+}
+.dg-par svg { width: 100%; height: auto; }
+.dg-par text { font-family: var(--f-texto); }
+@media (min-width: 640px) { .dg-par { grid-template-columns: 1fr 1fr; } }
+
+/* Diagrama 2 · Escalera de decisión */
+.prosa-blog .escalera { display: grid; gap: 0.6rem; }
+.prosa-blog .escalera li::before { content: none; }
+.prosa-blog .escalera li {
+  display: grid;
+  gap: 0.2rem;
+  padding: 1rem 1.15rem;
+  background: var(--blanco);
+  border-left: 6px solid var(--c, var(--teal));
+}
+.escalera strong { font-size: 1.05rem; }
+.escalera span { font-size: 0.95rem; color: var(--acero); line-height: 1.45; }
+@media (min-width: 640px) {
+  .prosa-blog .escalera li:nth-child(2) { margin-left: 1.25rem; }
+  .prosa-blog .escalera li:nth-child(3) { margin-left: 2.5rem; }
+}
+
+/* Diagrama 3 · Hoja de proceso */
+.hoja {
+  background: var(--blanco);
+  border: 1px solid var(--filete-claro);
+  box-shadow: 0 1px 0 var(--filete-claro), 0 18px 40px -28px rgba(0, 43, 73, 0.45);
+}
+.hoja__cab {
+  padding: 0.85rem 1.15rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blanco);
+  background: var(--navy);
+}
+.hoja dl { margin: 0; }
+.hoja dl > div {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.85rem 1.15rem;
+  border-top: 1px solid var(--filete-claro);
+}
+.hoja dl > div:first-child { border-top: 0; }
+.hoja dt {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0E7A66;
+}
+.hoja dd { margin: 0; font-size: 0.98rem; line-height: 1.45; }
+@media (min-width: 640px) {
+  .hoja dl > div { grid-template-columns: 11rem 1fr; gap: 1rem; align-items: baseline; }
+}
+
+/* Diagrama 4 · Etapas de venta */
+.prosa-blog .etapas { display: grid; gap: 0.5rem; counter-reset: e; }
+.prosa-blog .etapas li::before { content: none; }
+.prosa-blog .etapas li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.15rem 0.9rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  counter-increment: e;
+  background: var(--blanco);
+  border-left: 6px solid var(--div-comercial);
+}
+.etapas li::after {
+  content: counter(e);
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  font-family: var(--f-mono);
+  font-size: 0.85rem;
+  color: var(--blanco);
+  background: var(--navy);
+}
+.etapas b { grid-column: 2; display: block; font-size: 1.02rem; }
+.etapas small { grid-column: 2; display: block; font-size: 0.88rem; color: var(--acero); line-height: 1.4; }
+@media (min-width: 760px) {
+  .prosa-blog .etapas { grid-template-columns: repeat(3, 1fr); }
+  .prosa-blog .etapas li {
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-left: 0;
+    border-top: 5px solid var(--div-comercial);
+  }
+  .etapas li::after { grid-column: 1; grid-row: 1; }
+  .etapas b, .etapas small { grid-column: 1; }
+}
+
+/* Preguntas frecuentes plegables -------------------------------------------- */
+
+.faq { margin-top: 1.25rem; display: grid; gap: 0.5rem; }
+.faq details { background: var(--blanco); border-left: 4px solid var(--filete-claro); }
+.faq details[open] { border-left-color: var(--teal); }
+.faq summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 3rem 1rem 1.15rem;
+  position: relative;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: '+';
+  position: absolute;
+  right: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--f-mono);
+  font-size: 1.3rem;
+  color: #0E7A66;
+}
+.faq details[open] summary::after { content: '–'; }
+.faq summary:focus-visible { outline-color: var(--navy); }
+.faq details > p { margin: 0; padding: 0 1.15rem 1.15rem; max-width: none; font-size: 0.98rem; }
+
+/* Llamada final -------------------------------------------------------------- */
+
+.blog-cta {
+  margin-top: 3rem;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  color: var(--blanco);
+  background: var(--navy);
+}
+.blog-cta h2 { margin: 0 0 0.75rem; color: var(--blanco); font-size: clamp(1.4rem, 3.4vw, 1.8rem); }
+.blog-cta p { color: var(--sobre-navy-2); max-width: 52ch; margin-bottom: 0; }
+.blog-cta .grupo-cta { margin-top: 1.25rem; }
+.blog-cta .sigue { margin-top: 1.5rem; font-size: 0.95rem; }
+.blog-cta .sigue a { color: var(--teal-vivo); text-decoration: underline; text-underline-offset: 0.2em; }
+
+/* Índice del blog: tarjetas --------------------------------------------------- */
+
+.blog-grid { display: grid; gap: 1.5rem; }
+@media (min-width: 720px) { .blog-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+.tarjeta-blog {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--blanco);
+  color: var(--navy);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.tarjeta-blog:hover,
+.tarjeta-blog:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 40px -28px rgba(0, 43, 73, 0.55);
+}
+.tarjeta-blog img { width: 100%; aspect-ratio: 1200 / 630; object-fit: cover; }
+.tarjeta-blog__cuerpo { display: grid; gap: 0.6rem; align-content: start; padding: 1.25rem 1.35rem 1.5rem; }
+.tarjeta-blog h2 { margin: 0; font-size: 1.3rem; line-height: 1.2; letter-spacing: -0.01em; }
+.tarjeta-blog h2 a { color: var(--navy); }
+.tarjeta-blog h2 a::after { content: ''; position: absolute; inset: 0; } /* toda la tarjeta es clicable */
+.tarjeta-blog { position: relative; }
+.tarjeta-blog p { margin: 0; font-size: 0.97rem; line-height: 1.55; max-width: none; }
+.tarjeta-blog .leer {
+  font-family: var(--f-mono);
+  font-size: var(--t-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0E7A66;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tarjeta-blog { transition: none; }
+  .tarjeta-blog:hover, .tarjeta-blog:focus-within { transform: none; }
+}
