@@ -396,7 +396,7 @@
         form.innerHTML =
           '<div class="diag__nivel">SOLICITUD RECIBIDA</div>' +
           '<p class="t-h3" style="max-width:26ch;margin-bottom:1rem">Gracias. Te contactamos para agendar el diagnóstico.</p>' +
-          '<p>Revisa tu correo: ahí llega la confirmación con los siguientes pasos.</p>';
+          '<p>Nos pondremos en contacto contigo por WhatsApp o correo para acordar el día y la hora.</p>';
         evento('formulario_exito', {});
       }
 
