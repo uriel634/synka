@@ -393,10 +393,17 @@
       enviar.textContent = 'Enviando…';
 
       function exito() {
+        var wa = CFG.whatsapp
+          ? '<p style="margin-top:1.5rem"><a class="btn btn--primario" target="_blank" rel="noopener" ' +
+            'href="https://wa.me/' + CFG.whatsapp + '?text=' +
+            encodeURIComponent('Hola, acabo de solicitar el diagnóstico en synka.mx.') + '">' +
+            'Escríbenos por WhatsApp</a></p>'
+          : '';
         form.innerHTML =
           '<div class="diag__nivel" style="color:var(--tinta-clara)">SOLICITUD RECIBIDA</div>' +
-          '<p class="t-h3" style="max-width:26ch;margin-bottom:1rem;color:var(--navy)">Gracias. Te contactamos para agendar el diagnóstico.</p>' +
-          '<p style="color:var(--navy)">Nos pondremos en contacto contigo por WhatsApp o correo para acordar el día y la hora.</p>';
+          '<p class="t-h3" style="max-width:26ch;margin-bottom:1rem;color:var(--navy)">Gracias. Recibimos tu solicitud.</p>' +
+          '<p style="color:var(--navy)">Te escribiremos por WhatsApp o correo para acordar el día y la hora. ' +
+          'Si prefieres adelantar la conversación, escríbenos ahora.</p>' + wa;
         evento('formulario_exito', {});
       }
 
