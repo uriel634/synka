@@ -12,12 +12,12 @@ window.SYNKA_CONFIG = {
   correo: 'contacto@synka.mx',
 
   // Formato E.164 para marcar. En México el "1" no se usa al llamar.
-  telefono: '+525520654337',
+  telefono: '+525528994084',
 
   // Solo dígitos, para wa.me. Se conserva el "1" después del 52 porque es el
   // formato que ya venía funcionando en el sitio anterior de VESTRA.
-  // Si el enlace fallara, quitar el 1: 525520654337.
-  whatsapp: '5215520654337',
+  // Si el enlace fallara, quitar el 1: 525528994084.
+  whatsapp: '5215528994084',
 
   linkedin: '',            // p. ej. 'https://www.linkedin.com/company/synka'
 
