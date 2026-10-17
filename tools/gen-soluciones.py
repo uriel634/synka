@@ -253,6 +253,7 @@ PLANTILLA = """<!DOCTYPE html>
         <li><a class="nav__enlace" href="/#soluciones">Soluciones</a></li>
         <li><a class="nav__enlace" href="/#nosotros">Nosotros</a></li>
         <li><a class="nav__enlace" href="/#diagnostico">Diagnóstico</a></li>
+        <li><a class="nav__enlace" href="/blog/">Blog</a></li>
       </ul>
       <a class="btn btn--primario" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="header">Solicitar diagnóstico</a>
     </nav>
@@ -271,6 +272,7 @@ PLANTILLA = """<!DOCTYPE html>
         <li><a href="/#soluciones">Soluciones</a></li>
         <li><a href="/#nosotros">Nosotros</a></li>
         <li><a href="/#diagnostico">Diagnóstico</a></li>
+        <li><a href="/blog/">Blog</a></li>
       </ul>
       <a class="btn btn--primario btn--bloque" href="#solicitar" data-cta="solicitar_diagnostico" data-seccion="menu_movil">Solicitar diagnóstico</a>
     </nav>
