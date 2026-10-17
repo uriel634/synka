@@ -394,9 +394,9 @@
 
       function exito() {
         form.innerHTML =
-          '<div class="diag__nivel">SOLICITUD RECIBIDA</div>' +
-          '<p class="t-h3" style="max-width:26ch;margin-bottom:1rem">Gracias. Te contactamos para agendar el diagnóstico.</p>' +
-          '<p>Nos pondremos en contacto contigo por WhatsApp o correo para acordar el día y la hora.</p>';
+          '<div class="diag__nivel" style="color:var(--tinta-clara)">SOLICITUD RECIBIDA</div>' +
+          '<p class="t-h3" style="max-width:26ch;margin-bottom:1rem;color:var(--navy)">Gracias. Te contactamos para agendar el diagnóstico.</p>' +
+          '<p style="color:var(--navy)">Nos pondremos en contacto contigo por WhatsApp o correo para acordar el día y la hora.</p>';
         evento('formulario_exito', {});
       }
 
