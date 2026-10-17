@@ -33,7 +33,7 @@ window.SYNKA_CONFIG = {
      en el endpoint (https://formspree.io/f/ESTE_ID) y pegarlo abajo.
      Mientras esté vacío, el formulario compone un correo a `correo` y el
      sitio nunca se queda sin vía de contacto.                               */
-  formspreeId: '',         // p. ej. 'xdorwkyz'
+  formspreeId: 'mzedozab',         // p. ej. 'xdorwkyz'
 
   /* --- Diagnóstico ------------------------------------------------------ */
   umbralMedio: 5,          // puntuación a partir de la cual el nivel es MEDIO
