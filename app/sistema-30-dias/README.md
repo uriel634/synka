@@ -41,6 +41,17 @@ Versión 2: cobro automático por webhook y recordatorios con la API de WhatsApp
 - Con la prueba vencida el workspace queda en solo lectura; no se borra nada.
 - El historial de oportunidades solo admite altas.
 
+## Lógica de cálculo
+
+`js/calc.js` no toca el DOM ni la red; corre igual en el navegador y en Node.
+Cubre la cuota semanal por días hábiles (descontando ausencias y festivos), la actividad
+mínima, el avance esperado a hoy, el semáforo, el pronóstico, el reporte y el mensaje para
+`wa.me`, y el `.ics` de la reunión semanal con recurrencia.
+
+```bash
+node --test app/sistema-30-dias/test/calc.test.js
+```
+
 ## Probar el esquema
 
 ```bash
