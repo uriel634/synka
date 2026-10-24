@@ -22,6 +22,8 @@ ARTICULOS = [
      'Cómo documentar los procesos de tu empresa sin volverla burocrática', '#00C9B7'),
     ('ventas-sin-depender-del-dueno', 'Blog · Ventas',
      'Cómo hacer que tus ventas no dependan de que tú cierres todo', '#F0845B'),
+    ('senales-empresa-depende-del-dueno', 'Blog · Dependencia del dueño',
+     '7 señales de que tu empresa depende de ti', '#9C86F5'),
 ]
 
 ISOTIPO = '''<g><polygon points="36,50 8,22 8,39 19,50" fill="{a}"/><polygon points="36,50 8,78 8,61 19,50" fill="{b}"/></g>'''
@@ -51,7 +53,9 @@ h1{{position:absolute;left:72px;top:182px;width:760px;font-weight:600;font-size:
 
 def chrome():
     for patron in ('/opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell',
-                   '/opt/pw-browsers/chromium-*/chrome-linux/chrome'):
+                   '/opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell',
+                   '/opt/pw-browsers/chromium-*/chrome-linux/chrome',
+                   '/opt/pw-browsers/chromium-*/chrome-linux64/chrome'):
         hallados = sorted(glob.glob(patron))
         if hallados:
             return hallados[-1]

@@ -17,6 +17,12 @@ Este directorio es el paquete de trabajo del equipo de marketing.
 | [`04-anuncios.md`](04-anuncios.md) | Meta Ads y Google Ads: segmentación, textos, reglas de apagado |
 | [`05-nurture.md`](05-nurture.md) | Secuencia de 4 mensajes después del Radar, por división |
 | [`06-alianzas-y-perfiles.md`](06-alianzas-y-perfiles.md) | Perfil de Empresa en Google, alianzas con contadores/abogados/cámaras |
+| [`perfiles-instagram.md`](perfiles-instagram.md) | Biografías, enlaces con UTM y limpieza del contenido de la marca anterior en las dos cuentas de Instagram |
+| [`guiones-reels.md`](guiones-reels.md) | 7 guiones de reels para grabar en una sola sesión |
+| [`calendario/`](calendario/) | **Calendario del mes de lanzamiento:** `semana-1.md` a `semana-4.md` con texto listo para copiar, y un CSV para importar |
+| [`visuales/`](visuales/) | **25 imágenes listas para subir** (carruseles 1080×1350): `senales/`, `frases/`, `ventas/` |
+| [`automatizacion.md`](automatizacion.md) | Qué se puede programar, cómo, y tu rutina semanal de ≈ 90 minutos |
+| [`plantillas/leads.csv`](plantillas/leads.csv) | Encabezados de la hoja de seguimiento de leads (importar en Google Sheets) |
 
 ## Diagnóstico: por qué no llegan leads
 
@@ -35,6 +41,10 @@ Este directorio es el paquete de trabajo del equipo de marketing.
   (formulario de la portada incluido).
 - **Evento `generate_lead`** en ambos formularios (para marcarlo como evento clave en GA4).
 - **CTA principal de la portada = Radar** ("Mide tu dependencia en 5 minutos"); "Solicita tu diagnóstico" queda como enlace secundario.
+- **Artículo «7 señales de que tu empresa depende de ti»** (`/blog/senales-empresa-depende-del-dueno`): con portada, resumen,
+  7 señales con primer paso cada una, preguntas frecuentes (schema FAQPage), tarjeta en el índice, sitemap, `llms.txt` y enlace desde el artículo hermano.
+- **Carruseles, calendario y guiones** de `marketing/` (generados con `tools/gen-carruseles.py` y `tools/gen-calendario.py`).
+- **Instagram de SYNKA y de Uriel** declarados en el schema del sitio (`sameAs`).
 - **Correo de respaldo unificado** a `contacto@synka.mx` (antes `hola@` en el HTML estático; con JavaScript ya se reescribía desde `config.js`).
 
 Verificado en navegador: Radar completo → formulario → payload con UTM, eventos `formulario_enviado`, `formulario_exito`, `generate_lead`, sin errores de consola; contraste del bloque 12.85:1.
@@ -50,25 +60,33 @@ Verificado en navegador: Radar completo → formulario → payload con UTM, even
 | 5 | Crear la página de empresa en LinkedIn y pegar la URL | `js/config.js` → `linkedin` |
 | 6 | Confirmar que `contacto@synka.mx` existe y que alguien lo lee a diario | — |
 | 7 | Crear cuentas de Meta Ads y Google Ads | `04` |
+| 8 | Cambiar las biografías y los enlaces de Instagram, y archivar el contenido de la marca anterior | `perfiles-instagram.md` |
+| 9 | Grabar los reels (una sesión de 45–60 min) | `guiones-reels.md` |
+| 10 | Programar la primera semana (ver `automatizacion.md`) | `calendario/semana-1.md` |
+| 11 | Fusionar la rama y desplegar el sitio **el lunes 9 de noviembre** (el artículo lleva esa fecha) | — |
 
-## Calendario (resumen)
+## Calendario del mes de lanzamiento (detalle en `calendario/`)
 
-| Semana | Acción | Canal |
-|---|---|---|
-| 0 · 2–8 nov | Pendientes 1–6 de arriba | Técnico |
-| 1 | LinkedIn de Uriel y de la empresa; banco de 12 posts; primeros 5 contactos/día | LinkedIn |
-| 2 | Revisar flujo del Radar con GA4 en vivo; primeras 3 publicaciones | Sitio, LinkedIn |
-| 3 | Lanzar Meta y Google con presupuesto de prueba; outreach 15/día | Pago, outreach |
-| 4 | Retirar o redirigir sitios VESTRA; primeras reuniones de alianza | Técnico, alianzas |
-| 5 | Artículo "7 señales de que tu empresa depende de ti" | Blog |
-| 6 | Primeros 2 diagnósticos con testimonio | Ventas |
-| 7 | Optimización: apagar el 50 % peor de anuncios | Pago |
-| 8 | Webinar de 40 min + artículo de ventas | Webinar, blog |
-| 9–10 | Publicar caso 1; enviar el Radar a la base de contactos | Todos |
-| 11 | Artículo de división | Blog |
-| 12 | Informe de resultados y decisión de escalar | Interno |
+| Semana | Foco | LinkedIn (3/sem.) | Instagram | Otros |
+|---|---|---|---|---|
+| **1 · 9–13 nov** | Lanza el artículo «7 señales» | Carrusel de las 7 señales · prueba de una pregunta · invitación al Radar | SYNKA: carrusel «7 señales» · Uriel: historias + reel R1 | Artículo publicado el lun 9 · Perfil de Empresa en Google |
+| **2 · 16–20 nov** | Las 7 frases | Carrusel de frases · «Juan» · el equipo no es el problema | SYNKA: carrusel frases · Uriel: reels R2 y R3 | Perfil de Empresa en Google |
+| **3 · 23–27 nov** | Ventas · arranque de anuncios | Carrusel «¿Tus ventas dependen de ti?» · delegar · organigrama real | SYNKA: carrusel ventas · Uriel: reels R4 y R5 | Artículo 2 pendiente de redactar · inicio de Meta y Google Ads |
+| **4 · 30 nov–4 dic** | Consolidar y medir | Documentar sin burocracia · lo que hacemos distinto · dependencia vs. sistema | Uriel: reels R6 y R7 | Revisión de las 4 semanas (vie 4 dic) |
 
-Deja ~20 % del calendario libre para oportunidades.
+Aproximadamente 7–9 piezas por semana. Con la rutina de `automatizacion.md` son ≈ 90 minutos.
+
+### Calendario editorial del blog (un artículo cada 2 semanas, uno por división)
+
+| Cuándo | Artículo | División | Estado |
+|---|---|---|---|
+| Lun 9 nov | 7 señales de que tu empresa depende de ti | General (pilar) | **Escrito y listo** |
+| Lun 23 nov | El organigrama real: quién decide de verdad en tu empresa | Estructura | Pendiente |
+| Lun 7 dic | Los 5 números que un dueño debería ver sin preguntar | Control | Pendiente |
+| Lun 11 ene | Perfil de puesto y evaluación en una PyME: por dónde empezar | Personas | Pendiente |
+| Lun 25 ene | Estándares de servicio que se sostienen sin supervisión | Operación | Pendiente |
+
+*(Corrección: el plan inicial incluía un «artículo de ventas» en la semana 8, pero ese ya existe: `ventas-sin-depender-del-dueno`.)*
 
 ## KPIs (hipótesis a 90 días)
 

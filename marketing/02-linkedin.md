@@ -137,7 +137,7 @@ Si el real tiene tu nombre en el centro de todo, hay un cuello de botella con fo
 
 Diseñar estructura no es dibujar cajas: es definir quién decide qué y qué ya no regresa a ti.
 
-### Post 10 · Carrusel — "7 señales"
+### Post 10 · Carrusel — "7 señales" (ya hecho: ver `visuales/senales/` y `calendario/semana-1.md`)
 **Gancho:** 7 señales de que tu empresa depende de ti (y no te has dado cuenta).
 
 Señales: te llaman en vacaciones · las decisiones esperan tu visto bueno · hay procesos que solo una persona conoce · cada quien hace lo mismo distinto · no sabes tu margen sin preguntar · tus mejores clientes solo hablan contigo · "luego lo vemos" es tu respuesta más repetida.
