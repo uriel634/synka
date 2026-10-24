@@ -25,6 +25,29 @@
   }
   window.synkaEvento = evento;
 
+  /* --- Atribución ---------------------------------------------------------
+     Guarda de dónde llegó la visita (UTM, gclid/fbclid, referrer) la primera
+     vez que se ve en la pestaña, para que cada lead diga qué canal lo trajo.
+     sessionStorage: sin cookies y sin persistir fuera de la pestaña.         */
+  function atribucion() {
+    var guardada = {};
+    try { guardada = JSON.parse(sessionStorage.getItem('synka_atrib') || '{}') || {}; } catch (e) {}
+    var q = new URLSearchParams(window.location.search);
+    var actual = {};
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid']
+      .forEach(function (k) { if (q.get(k)) actual[k] = q.get(k).slice(0, 120); });
+    /* Se reescribe solo si la visita trae parámetros nuevos o aún no hay nada guardado */
+    if (Object.keys(actual).length || !guardada.pagina_inicial) {
+      actual.pagina_inicial = window.location.pathname;
+      if (document.referrer) actual.referrer = document.referrer.slice(0, 200);
+      guardada = actual;
+      try { sessionStorage.setItem('synka_atrib', JSON.stringify(guardada)); } catch (e) {}
+    }
+    return guardada;
+  }
+  window.synkaAtribucion = atribucion;
+  atribucion();
+
   function cargarAnalitica() {
     if (CFG.gtmId) {
       window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
@@ -382,6 +405,8 @@
       new FormData(form).forEach(function (v, k) { if (k !== 'empresa_web') datos[k] = v; });
       datos.origen = window.location.pathname;
       datos.enviado_en = new Date().toISOString();
+      var atr = atribucion();
+      for (var ak in atr) { if (Object.prototype.hasOwnProperty.call(atr, ak)) datos[ak] = atr[ak]; }
 
       evento('formulario_enviado', {
         colaboradores: datos.colaboradores || '',
@@ -405,6 +430,8 @@
           '<p style="color:var(--navy)">Te escribiremos por WhatsApp o correo para acordar el día y la hora. ' +
           'Si prefieres adelantar la conversación, escríbenos ahora.</p>' + wa;
         evento('formulario_exito', {});
+        evento('generate_lead', { origen: 'formulario_portada',
+                                  utm_source: atr.utm_source || '', utm_campaign: atr.utm_campaign || '' });
       }
 
       function fallo(motivo) {

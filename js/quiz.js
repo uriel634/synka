@@ -253,8 +253,38 @@
            '<a href="../soluciones/comercial.html" data-cta="division_desde_comercial"><b>SYNKA</b> COMERCIAL</a>.</p>';
     }
 
+    /* Captura del lead en el momento de mayor interés: justo al ver el resultado.
+       Antes este punto mandaba a la portada y quien no volvía a llenar el
+       formulario largo se perdía. */
+    h += '<div class="quiz__lead" data-lead>' +
+         '<span class="dato">RECIBE ESTE RESULTADO Y AGENDA TU DIAGNÓSTICO</span>' +
+         '<p class="quiz__lead-texto">Te escribimos para revisar este perfil contigo y acordar una sesión de diagnóstico. Sin costo y sin compromiso.</p>' +
+         '<form class="form" data-form-lead novalidate>' +
+           '<div class="trampa" aria-hidden="true"><label for="lead_web">No llenar</label>' +
+             '<input type="text" id="lead_web" name="empresa_web" tabindex="-1" autocomplete="off"></div>' +
+           '<div class="form__fila form__fila--2">' +
+             '<p class="campo"><label for="lead_nombre">Nombre <span aria-hidden="true">*</span></label>' +
+               '<input type="text" id="lead_nombre" name="nombre" autocomplete="name" required></p>' +
+             '<p class="campo"><label for="lead_empresa">Empresa <span aria-hidden="true">*</span></label>' +
+               '<input type="text" id="lead_empresa" name="empresa" autocomplete="organization" required></p>' +
+           '</div>' +
+           '<div class="form__fila form__fila--2">' +
+             '<p class="campo"><label for="lead_whatsapp">WhatsApp <span aria-hidden="true">*</span></label>' +
+               '<input type="tel" id="lead_whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel" required></p>' +
+             '<p class="campo"><label for="lead_email">Email <span aria-hidden="true">*</span></label>' +
+               '<input type="email" id="lead_email" name="email" autocomplete="email" inputmode="email" required></p>' +
+           '</div>' +
+           '<p class="campo"><label for="lead_colab">Número aproximado de colaboradores <span aria-hidden="true">*</span></label>' +
+             '<select id="lead_colab" name="colaboradores" required>' +
+               '<option value="">Selecciona</option><option value="1-4">1 a 4</option><option value="5-15">5 a 15</option>' +
+               '<option value="16-50">16 a 50</option><option value="51-100">51 a 100</option><option value="100+">Más de 100</option>' +
+             '</select></p>' +
+           '<p class="form__error" data-lead-error role="alert" hidden></p>' +
+           '<button class="btn btn--primario btn--bloque" type="submit" data-cta="enviar_formulario" data-seccion="' + DATOS.id + '_resultado">Quiero mi diagnóstico</button>' +
+           '<p class="form__aviso">Usamos tus datos únicamente para contactarte sobre el diagnóstico.</p>' +
+         '</form></div>';
+
     h += '<div class="grupo-cta">' +
-         '<a class="btn btn--primario" href="../index.html#solicitar" data-cta="solicitar_diagnostico" data-seccion="' + DATOS.id + '_resultado">Solicita tu diagnóstico</a>' +
          '<button type="button" class="diag__reiniciar" data-reiniciar-2>Volver a empezar</button>' +
          '</div>';
 
@@ -275,8 +305,91 @@
     carga.mas_debil = DIVISIONES[debiles[0]] ? DIVISIONES[debiles[0]].n : debiles[0];
     evento('diagnostico_terminado', carga);
 
+    conectarLead(carga, orden.map(function (k) { return k + ' ' + r.ejes[k].pct + '%'; }).join(' · '));
+
     vistaR.focus({ preventScroll: true });
     vistaR.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  }
+
+  /* --- Formulario de lead dentro del resultado --------------------------- */
+
+  function conectarLead(carga, perfil) {
+    var form = vistaR.querySelector('[data-form-lead]');
+    if (!form) return;
+    var error = form.querySelector('[data-lead-error]');
+    var enviar = form.querySelector('[type="submit"]');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      error.hidden = true;
+      if (form.querySelector('[name="empresa_web"]').value) return;
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        error.textContent = 'Revisa los campos marcados: falta información obligatoria.';
+        error.hidden = false;
+        evento('formulario_error', { motivo: 'validacion', origen: DATOS.id + '_resultado' });
+        return;
+      }
+
+      var datos = {};
+      new FormData(form).forEach(function (v, k) { if (k !== 'empresa_web') datos[k] = v; });
+      datos.origen = window.location.pathname;
+      datos.instrumento = DATOS.id;
+      datos.resultado = carga.nivel + ' · ' + carga.porcentaje + '%';
+      datos.mas_debil = carga.mas_debil;
+      datos.perfil = perfil;
+      datos.enviado_en = new Date().toISOString();
+      var atr = window.synkaAtribucion ? window.synkaAtribucion() : {};
+      for (var ak in atr) { if (Object.prototype.hasOwnProperty.call(atr, ak)) datos[ak] = atr[ak]; }
+
+      evento('formulario_enviado', { origen: DATOS.id + '_resultado', colaboradores: datos.colaboradores });
+
+      var original = enviar.textContent;
+      enviar.disabled = true;
+      enviar.textContent = 'Enviando…';
+
+      function exito() {
+        var wa = CFG.whatsapp
+          ? '<p style="margin-top:1.25rem"><a class="btn btn--primario" target="_blank" rel="noopener" href="https://wa.me/' +
+            CFG.whatsapp + '?text=' + encodeURIComponent('Hola, acabo de hacer el ' + DATOS.id +
+            ' en synka.mx. Mi resultado: ' + datos.resultado + '. Mi punto más débil: ' + datos.mas_debil + '.') +
+            '">Escríbenos por WhatsApp</a></p>'
+          : '';
+        form.outerHTML = '<div class="quiz__lead-ok" role="status"><span class="dato">RECIBIDO</span>' +
+          '<p class="quiz__lead-texto">Gracias, ' + (datos.nombre || '').replace(/[<>&"]/g, '') +
+          '. Te escribiremos por WhatsApp o correo para acordar el día y la hora de tu diagnóstico.</p>' + wa + '</div>';
+        evento('formulario_exito', { origen: DATOS.id + '_resultado' });
+        evento('generate_lead', { origen: DATOS.id + '_resultado', nivel: carga.nivel,
+                                  mas_debil: carga.mas_debil,
+                                  utm_source: atr.utm_source || '', utm_campaign: atr.utm_campaign || '' });
+      }
+
+      function fallo(motivo) {
+        enviar.disabled = false;
+        enviar.textContent = original;
+        error.innerHTML = 'No pudimos enviar tus datos. Escríbenos directo a ' +
+          '<a href="mailto:' + (CFG.correo || '') + '">' + (CFG.correo || '') + '</a>.';
+        error.hidden = false;
+        evento('formulario_error', { motivo: motivo, origen: DATOS.id + '_resultado' });
+      }
+
+      if (CFG.endpointFormulario) {
+        datos._subject = 'Lead ' + DATOS.id + ' — ' + datos.empresa + ' (' + datos.resultado + ')';
+        fetch(CFG.endpointFormulario, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(datos)
+        }).then(function (r) { r.ok ? exito() : fallo('http_' + r.status); })
+          .catch(function () { fallo('red'); });
+      } else {
+        var cuerpo = Object.keys(datos).map(function (k) {
+          return k.replace(/_/g, ' ').toUpperCase() + ': ' + datos[k];
+        }).join('\n');
+        window.location.href = 'mailto:' + (CFG.correo || '') + '?subject=' +
+          encodeURIComponent('Lead ' + DATOS.id + ' — ' + datos.empresa) + '&body=' + encodeURIComponent(cuerpo);
+        setTimeout(exito, 600);
+      }
+    });
   }
 
   function reiniciar() {
