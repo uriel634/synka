@@ -19,7 +19,7 @@ Este directorio es el paquete de trabajo del equipo de marketing.
 | [`06-alianzas-y-perfiles.md`](06-alianzas-y-perfiles.md) | Perfil de Empresa en Google, alianzas con contadores/abogados/cámaras |
 | [`perfiles-instagram.md`](perfiles-instagram.md) | Biografías, enlaces con UTM y limpieza del contenido de la marca anterior en las dos cuentas de Instagram |
 | [`guiones-reels.md`](guiones-reels.md) | 7 guiones de reels para grabar en una sola sesión |
-| [`calendario/`](calendario/) | **Calendario del mes de lanzamiento:** `semana-1.md` a `semana-4.md` con texto listo para copiar, y un CSV para importar |
+| [`calendario/`](calendario/) | **Calendario:** `precalentamiento-dos-voces.md` (26 oct–6 nov, voz de Uriel y de SYNKA) y del mes de lanzamiento: `semana-1.md` a `semana-4.md` con texto listo para copiar, y un CSV para importar |
 | [`visuales/`](visuales/) | **25 imágenes listas para subir** (carruseles 1080×1350): `senales/`, `frases/`, `ventas/` |
 | [`automatizacion.md`](automatizacion.md) | Qué se puede programar, cómo, y tu rutina semanal de ≈ 90 minutos |
 | [`plantillas/leads.csv`](plantillas/leads.csv) | Encabezados de la hoja de seguimiento de leads (importar en Google Sheets) |
