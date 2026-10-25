@@ -11,6 +11,8 @@ Este directorio es el paquete de trabajo del equipo de marketing.
 
 | Archivo | Para qué sirve |
 |---|---|
+| [`plan-de-contenido.md`](plan-de-contenido.md) | **Plan de contenido de SYNKA y de la marca personal:** estrategia, pilares, ritmo, calendario de 12 semanas, KPIs |
+| [`banco-de-publicaciones.md`](banco-de-publicaciones.md) | Texto listo para copiar de las semanas 5 a 12 (dic–ene) |
 | [`01-medicion-y-setup.md`](01-medicion-y-setup.md) | Lo que bloquea todo: GA4, Search Console, UTM, hoja de leads, aviso de privacidad |
 | [`02-linkedin.md`](02-linkedin.md) | Perfil, 12 publicaciones listas y ritmo semanal |
 | [`03-outreach.md`](03-outreach.md) | Guiones de LinkedIn y WhatsApp, objeciones, calificación |
