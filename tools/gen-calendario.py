@@ -41,9 +41,9 @@ def add(fecha, hora, cuenta, formato, titulo, texto='', archivos=None, enlace=''
                   archivos=archivos or [], enlace=enlace, donde=donde, nota=nota))
 
 # ============================ SEMANA 1 · lanzamiento del artículo ============================
-add('2026-11-09', '09:00', WEB, 'Tarea', 'Artículo publicado + indexación',
-    nota='Fusionar la rama y desplegar. En Search Console: inspeccionar la URL del artículo y pedir indexación. '
-         'Cambiar el enlace de la biografía de Instagram (SYNKA y Uriel) al artículo.')
+add('2026-11-09', '09:00', WEB, 'Tarea', 'Biografías de Instagram + comprobar indexación',
+    nota='El artículo ya está publicado desde el 25 de octubre. En Search Console, comprobar que figura como indexado '
+         '(si no, pedir indexación). Cambiar el enlace de la biografía de Instagram (SYNKA y Uriel) al artículo.')
 
 add('2026-11-10', '08:30', LI, 'Carrusel (PDF o imágenes)', '7 señales de que tu empresa depende de ti',
     f'''Si en tu empresa pasa alguna de estas 7 cosas, tu empresa depende de ti.

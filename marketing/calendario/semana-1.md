@@ -4,7 +4,7 @@ Todo lo de esta página está listo para copiar y pegar. Las imágenes están en
 
 Resumen de la semana:
 
-- lun 9 nov 09:00 · Sitio · Tarea · Artículo publicado + indexación
+- lun 9 nov 09:00 · Sitio · Tarea · Biografías de Instagram + comprobar indexación
 - mar 10 nov 08:30 · LinkedIn (Uriel) · Carrusel (PDF o imágenes) · 7 señales de que tu empresa depende de ti
 - mar 10 nov 12:00 · Instagram SYNKA · Carrusel · 7 señales de que tu empresa depende de ti
 - mar 10 nov 12:10 · Instagram Uriel · Historias (3 cuadros) · Aviso personal del artículo
@@ -15,9 +15,9 @@ Resumen de la semana:
 
 ## lun 9 nov · 09:00 · Sitio · Tarea
 
-**Artículo publicado + indexación**
+**Biografías de Instagram + comprobar indexación**
 
-**Nota:** Fusionar la rama y desplegar. En Search Console: inspeccionar la URL del artículo y pedir indexación. Cambiar el enlace de la biografía de Instagram (SYNKA y Uriel) al artículo.
+**Nota:** El artículo ya está publicado desde el 25 de octubre. En Search Console, comprobar que figura como indexado (si no, pedir indexación). Cambiar el enlace de la biografía de Instagram (SYNKA y Uriel) al artículo.
 
 ## mar 10 nov · 08:30 · LinkedIn (Uriel) · Carrusel (PDF o imágenes)
 

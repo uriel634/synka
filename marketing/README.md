@@ -63,13 +63,13 @@ Verificado en navegador: Radar completo → formulario → payload con UTM, even
 | 8 | Cambiar las biografías y los enlaces de Instagram, y archivar el contenido de la marca anterior | `perfiles-instagram.md` |
 | 9 | Grabar los reels (una sesión de 45–60 min) | `guiones-reels.md` |
 | 10 | Programar la primera semana (ver `automatizacion.md`) | `calendario/semana-1.md` |
-| 11 | Fusionar la rama y desplegar el sitio **el lunes 9 de noviembre** (el artículo lleva esa fecha) | — |
+| 11 | Confirmar en Search Console que el artículo ya está indexado (publicado el 25 de octubre) | `01-medicion-y-setup.md` |
 
 ## Calendario del mes de lanzamiento (detalle en `calendario/`)
 
 | Semana | Foco | LinkedIn (3/sem.) | Instagram | Otros |
 |---|---|---|---|---|
-| **1 · 9–13 nov** | Lanza el artículo «7 señales» | Carrusel de las 7 señales · prueba de una pregunta · invitación al Radar | SYNKA: carrusel «7 señales» · Uriel: historias + reel R1 | Artículo publicado el lun 9 · Perfil de Empresa en Google |
+| **1 · 9–13 nov** | Lanza el artículo «7 señales» | Carrusel de las 7 señales · prueba de una pregunta · invitación al Radar | SYNKA: carrusel «7 señales» · Uriel: historias + reel R1 | Artículo ya publicado (25 oct) · Perfil de Empresa en Google |
 | **2 · 16–20 nov** | Las 7 frases | Carrusel de frases · «Juan» · el equipo no es el problema | SYNKA: carrusel frases · Uriel: reels R2 y R3 | Perfil de Empresa en Google |
 | **3 · 23–27 nov** | Ventas · arranque de anuncios | Carrusel «¿Tus ventas dependen de ti?» · delegar · organigrama real | SYNKA: carrusel ventas · Uriel: reels R4 y R5 | Artículo 2 pendiente de redactar · inicio de Meta y Google Ads |
 | **4 · 30 nov–4 dic** | Consolidar y medir | Documentar sin burocracia · lo que hacemos distinto · dependencia vs. sistema | Uriel: reels R6 y R7 | Revisión de las 4 semanas (vie 4 dic) |
@@ -80,7 +80,7 @@ Aproximadamente 7–9 piezas por semana. Con la rutina de `automatizacion.md` so
 
 | Cuándo | Artículo | División | Estado |
 |---|---|---|---|
-| Lun 9 nov | 7 señales de que tu empresa depende de ti | General (pilar) | **Escrito y listo** |
+| 25 oct | 7 señales de que tu empresa depende de ti | General (pilar) | **Publicado** |
 | Lun 23 nov | El organigrama real: quién decide de verdad en tu empresa | Estructura | Pendiente |
 | Lun 7 dic | Los 5 números que un dueño debería ver sin preguntar | Control | Pendiente |
 | Lun 11 ene | Perfil de puesto y evaluación en una PyME: por dónde empezar | Personas | Pendiente |
