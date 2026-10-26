@@ -93,7 +93,7 @@ https://synka.mx/blog/senales-empresa-depende-del-dueno?utm_source=linkedin&utm_
 
 **Las seis áreas, una frase cada una**
 
-**Archivos:** por generar con la plantilla de marca (navy, teal). 8 láminas. Pídeme las imágenes y las produzco.
+**Archivos:** `marketing/visuales/seis-areas/01.png` … `08.png` (8 imágenes, en orden). El texto de las láminas sale de `tools/gen-carruseles.py`.
 
 **Contenido de las láminas:**
 
@@ -226,7 +226,7 @@ https://synka.mx/diagnostico/radar?utm_source=linkedin&utm_medium=social&utm_cam
 
 **Instalar, no entregar documentos**
 
-**Archivos:** por generar. 7 láminas.
+**Archivos:** `marketing/visuales/instalar/01.png` … `07.png` (7 imágenes, en orden).
 
 **Contenido de las láminas:**
 

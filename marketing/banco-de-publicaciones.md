@@ -9,6 +9,22 @@ Texto listo para copiar. Estructura y razones en [`plan-de-contenido.md`](plan-d
 - Enlaces: pegar en el **primer comentario** (LinkedIn) o en la **bio** (Instagram). Plantillas de UTM al final.
 - Ninguna pieza menciona clientes. Las plantillas de prueba (U-16, U-20) solo se usan cuando existan los datos o la autorización.
 
+**Imágenes de los carruseles de SYNKA (ya generadas, en `marketing/visuales/`)**
+
+| Pieza | Carpeta | Láminas |
+|---|---|---|
+| S-01 | `tablero/` | 7 |
+| S-02 | `puesto/` | 7 |
+| S-03 | `cierre-anio/` | 7 |
+| S-04 | `area-debil/` | 8 |
+| S-05 | `evaluar/` | 6 |
+| S-06 | `informe-vs-instalacion/` | 7 |
+| S-07 | `estandar/` | 7 |
+
+Los textos de las láminas de cada carrusel están en `tools/gen-carruseles.py` (fuente de verdad); si se editan, `python3 tools/gen-carruseles.py <nombre>` las regenera. Las listas de láminas de abajo son el esquema; las imágenes pueden diferir en el orden de detalle.
+
+**CTA de conversación (desde el 12 de nov):** en los posts de jueves y reels de jueves, añadir una línea de `07-motor-de-clientes.md` (sección 8).
+
 ---
 
 # SEMANA 5 · 7–11 dic · Control
@@ -106,6 +122,8 @@ Sin juzgar: cada respuesta apunta a un lugar donde falta control. Y a veces el l
 2. «Una regla de decisión cabe en una línea: "hasta tal monto, tú decides; de ahí en adelante, me avisas antes".»
 3. «Funciona con descuentos, compras, reposiciones, devoluciones. Con lo que más te interrumpe.»
 4. «Escribe una hoy. Y si quieres ver dónde faltan más, el Radar. Enlace en mi bio.»
+
+**Texto:** `Si todo te lo preguntan, falta una regla. Una regla de decisión cabe en una línea. Escribe una hoy. Radar SYNKA, gratis, 5 minutos: enlace en mi bio.` + hashtags de siempre.
 
 ## S-01 · mié 9 dic · Instagram SYNKA · Carrusel
 
@@ -206,6 +224,8 @@ Pregunta útil: ¿qué aprobé esta semana que habría salido igual de bien sin 
 2. «Una instrucción que no regresa dice tres cosas: qué resultado quiero, hasta dónde puedes decidir solo y cuándo me avisas.»
 3. «Pruébalo con la próxima tarea que delegues.»
 4. «Y si quieres ver dónde se te atora más, el Radar. Enlace en mi bio.»
+
+**Texto:** `«Encárgate de esto» casi siempre regresa a ti. Una instrucción que no regresa dice qué resultado quieres, hasta dónde decide la persona y cuándo te avisa. Radar SYNKA: enlace en mi bio.` + hashtags de siempre.
 
 ## S-02 · mié 16 dic · Instagram SYNKA · Carrusel
 
@@ -381,6 +401,8 @@ Si el resultado te sorprende, platicamos. Si no, ya sabes por dónde empezar.
 3. «Nada de planes de cuarenta páginas.»
 4. «Para saber cuál va primero, el Radar. Enlace en mi bio.»
 
+**Texto:** `Tu primer lunes de enero: qué se detuvo, una cosa asignada, tres números a la vista y una reunión semanal. Radar SYNKA, gratis: enlace en mi bio.` + hashtags de siempre.
+
 ## S-04 · mié 6 ene · Instagram SYNKA · Carrusel
 
 **Qué hacer según tu área más débil**
@@ -475,6 +497,8 @@ No tiene que ser grande ni formal. Tiene que ser clara: quién decide qué, cóm
 2. «Pero en una empresa pequeña, si el dueño falta, se nota todo.»
 3. «El tamaño no decide si necesitas estructura. Decide cuánto te duele no tenerla.»
 4. «Mide cuánto te duele con el Radar. Enlace en mi bio.»
+
+**Texto:** `«Mi empresa es muy pequeña para esto.» En una empresa pequeña, si el dueño falta, se nota todo. Radar SYNKA, gratis: enlace en mi bio.` + hashtags de siempre.
 
 ## S-05 · mié 13 ene · Instagram SYNKA · Carrusel
 
@@ -576,6 +600,8 @@ No es un embudo escondido. Es la forma en que trabajamos.
 3. «Si no hay respuesta clara, es un informe, no una instalación.»
 4. «Nosotros empezamos midiendo. Enlace en mi bio.»
 
+**Texto:** `«Ya intenté con consultores y no funcionó.» Tres preguntas antes de contratar a quien sea. Radar SYNKA: enlace en mi bio.` + hashtags de siempre.
+
 ## S-06 · mié 20 ene · Instagram SYNKA · Carrusel
 
 **Informe vs. instalación**
@@ -617,6 +643,8 @@ Publicamos en el blog cómo bajar esto a una página por servicio.
 **Enlace** (primer comentario): artículo Operación → `utm_campaign=metodo-ene27&utm_content=u-19`
 
 ## U-20 · mié 27 ene · LinkedIn · Texto · **elegir una versión**
+
+**Un caso, o lo que sí puedo decir**
 
 **Versión A (solo con caso autorizado):**
 
@@ -679,6 +707,8 @@ Escríbeme un mensaje con la palabra «Radar» y te mando la agenda.
 2. «Ves tu perfil, recibes primeros pasos para tu área más débil y, si quieres, platicamos treinta minutos. Sin compromiso.»
 3. «Si no hay siguiente paso, te quedas con el diagnóstico.»
 4. «Empieza midiendo. Enlace en mi bio.»
+
+**Texto:** `Qué pasa después del Radar: ves tu perfil, recibes primeros pasos y, si quieres, platicamos 30 minutos. Sin compromiso. Enlace en mi bio.` + hashtags de siempre.
 
 **Antes de grabar:** que lo que dices coincida con tu proceso real.
 

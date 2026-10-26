@@ -11,6 +11,7 @@ Este directorio es el paquete de trabajo del equipo de marketing.
 
 | Archivo | Para qué sirve |
 |---|---|
+| [`07-motor-de-clientes.md`](07-motor-de-clientes.md) | **Cómo el contenido se convierte en clientes:** rutina diaria de 60 min, red cálida, hoja de oferta, conversación de 30 min, seguimiento y tablero semanal |
 | [`plan-de-contenido.md`](plan-de-contenido.md) | **Plan de contenido de SYNKA y de la marca personal:** estrategia, pilares, ritmo, calendario de 12 semanas, KPIs |
 | [`banco-de-publicaciones.md`](banco-de-publicaciones.md) | Texto listo para copiar de las semanas 5 a 12 (dic–ene) |
 | [`01-medicion-y-setup.md`](01-medicion-y-setup.md) | Lo que bloquea todo: GA4, Search Console, UTM, hoja de leads, aviso de privacidad |
@@ -21,8 +22,8 @@ Este directorio es el paquete de trabajo del equipo de marketing.
 | [`06-alianzas-y-perfiles.md`](06-alianzas-y-perfiles.md) | Perfil de Empresa en Google, alianzas con contadores/abogados/cámaras |
 | [`perfiles-instagram.md`](perfiles-instagram.md) | Biografías, enlaces con UTM y limpieza del contenido de la marca anterior en las dos cuentas de Instagram |
 | [`guiones-reels.md`](guiones-reels.md) | 7 guiones de reels para grabar en una sola sesión |
-| [`calendario/`](calendario/) | **Calendario:** `precalentamiento-dos-voces.md` (26 oct–6 nov, voz de Uriel y de SYNKA) y del mes de lanzamiento: `semana-1.md` a `semana-4.md` con texto listo para copiar, y un CSV para importar |
-| [`visuales/`](visuales/) | **25 imágenes listas para subir** (carruseles 1080×1350): `senales/`, `frases/`, `ventas/` |
+| [`calendario/`](calendario/) | **Calendario:** `precalentamiento-dos-voces.md` (26 oct–6 nov, voz de Uriel y de SYNKA) y del mes de lanzamiento: `semana-1.md` a `semana-4.md` con texto listo para copiar, y un CSV para importar (`calendario-completo.csv` reúne todo, 26 oct–29 ene) |
+| [`visuales/`](visuales/) | **Imágenes listas para subir** (carruseles 1080×1350): `senales/`, `frases/`, `ventas/` y los 9 carruseles del plan de contenido (`seis-areas/`, `instalar/`, `tablero/`, `puesto/`, `cierre-anio/`, `area-debil/`, `evaluar/`, `informe-vs-instalacion/`, `estandar/`) |
 | [`automatizacion.md`](automatizacion.md) | Qué se puede programar, cómo, y tu rutina semanal de ≈ 90 minutos |
 | [`plantillas/leads.csv`](plantillas/leads.csv) | Encabezados de la hoja de seguimiento de leads (importar en Google Sheets) |
 
@@ -66,6 +67,10 @@ Verificado en navegador: Radar completo → formulario → payload con UTM, even
 | 9 | Grabar los reels (una sesión de 45–60 min) | `guiones-reels.md` |
 | 10 | Programar la primera semana (ver `automatizacion.md`) | `calendario/semana-1.md` |
 | 11 | Confirmar en Search Console que el artículo ya está indexado (publicado el 25 de octubre) | `01-medicion-y-setup.md` |
+| 12 | **Armar la lista de 50 de la red cálida** y escribir a los primeros 10 | `07-motor-de-clientes.md`, sección 4 |
+| 13 | **Completar la hoja de oferta** (qué incluye, tiempo, inversión) antes del 12 de nov | `07-motor-de-clientes.md`, sección 5 |
+| 14 | Crear un **enlace de agenda** y pegarlo en `05-nurture.md` y en los scripts | `07-motor-de-clientes.md`, sección 10 |
+| 15 | Publicar el artículo de Control el 7 de dic (ya redactado, sin indexar) | `plan-de-contenido.md`, sección 5 |
 
 ## Calendario del mes de lanzamiento (detalle en `calendario/`)
 

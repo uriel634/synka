@@ -2,6 +2,8 @@
 
 Vigencia: **26 oct 2026 – 31 ene 2027** (se acopla a la campaña de `README.md`).
 Texto listo para copiar de las semanas nuevas: [`banco-de-publicaciones.md`](banco-de-publicaciones.md).
+**Cómo se convierte en clientes** (rutina diaria, red cálida, oferta, llamada, seguimiento): [`07-motor-de-clientes.md`](07-motor-de-clientes.md). **Sin ese documento, el calendario atrae pero no cierra.**
+CSV para importar todo el calendario: `calendario/calendario-completo.csv` (se regenera con `python3 tools/gen-calendario-completo.py`).
 Semanas ya redactadas: `calendario/precalentamiento-dos-voces.md` y `calendario/semana-1.md` a `semana-4.md`.
 
 > **Sobre los números.** No hay datos históricos de alcance ni conversión. Las metas son hipótesis para calibrar con las primeras 4 semanas de datos.
@@ -119,6 +121,19 @@ Piezas marcadas **(listo)** ya están redactadas. El resto está en el banco con
 
 Regla para cada artículo: portada, resumen destacado, pasos numerados, preguntas frecuentes (schema FAQPage), enlace interno al Radar y a la división, entrada en `sitemap.xml` y `llms.txt`.
 
+### Artículo de Control: ya redactado, sin publicar
+
+`blog/numeros-que-un-dueno-debe-ver-sin-preguntar.html` está listo (con portada), pero queda **sin indexar y sin enlazar** para que no salga antes del 7 de dic. El día de la publicación:
+
+1. En el archivo del artículo, cambiar `noindex, nofollow` por `index, follow, max-image-preview:large` y borrar el comentario «BORRADOR».
+2. Agregar su tarjeta en `blog/index.html` (copiar la estructura de la primera tarjeta).
+3. Agregar la URL a `sitemap.xml` con `lastmod` 2026-12-07.
+4. Agregar la línea a `llms.txt`.
+5. Enlazarlo desde «7 señales» (señal 6, Control).
+6. En Search Console, pedir la indexación.
+
+Los artículos de Personas (11 ene) y Operación (25 ene) siguen por redactar. Sus slugs previstos están en `tools/gen-calendario-completo.py`; si cambian, actualizarlos ahí.
+
 ---
 
 ## 6 · Escalera de llamados a la acción
@@ -135,6 +150,8 @@ Cada pieza pide **una sola cosa**. De menor a mayor compromiso:
 | 6 | Agendar una conversación de diagnóstico | Fase 4, tras el Radar o nurture |
 
 **Nunca** mandar al nivel 5–6 a un desconocido. El Radar es la puerta.
+
+**Regla añadida a partir del 12 de nov:** los posts de **jueves** y los reels de los jueves cierran, además, con una línea de conversación («Si quieres que revisemos tu resultado, escríbeme "Radar"»). Variantes y reglas en `07-motor-de-clientes.md`, sección 8. Solo funciona si alguien contesta esos mensajes el mismo día.
 
 ---
 
@@ -232,6 +249,9 @@ Dependen de ti y bloquean partes concretas:
 | Perfil de Empresa en Google | Publicaciones de los viernes |
 | **Oferta de entrada definida** (qué incluye, tiempo, precio o rango) | Fase 4 (P5 Oferta) |
 | **Primer caso autorizado** | Fase 4 (P4 Prueba) |
+| **Lista de 50 personas de la red cálida** | La fuente más rápida de primeras conversaciones (`07`, sección 4) |
+| **Enlace de agenda** (calendario de citas) | Que quien quiera hablar elija horario sin ida y vuelta |
+| **Hoja de oferta completa** (`07`, sección 5) | Responder «¿cuánto cuesta?» sin improvisar |
 | Sesión de grabación de reels (45–60 min) | Reels desde el 26 oct. Se graban en bloques: A, B, R1–R7 (octubre) y R9–R15 (noviembre) |
 
 ### Datos agregados del Radar: reglas

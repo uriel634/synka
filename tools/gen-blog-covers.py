@@ -24,6 +24,8 @@ ARTICULOS = [
      'Cómo hacer que tus ventas no dependan de que tú cierres todo', '#F0845B'),
     ('senales-empresa-depende-del-dueno', 'Blog · Dependencia del dueño',
      '7 señales de que tu empresa depende de ti', '#9C86F5'),
+    ('numeros-que-un-dueno-debe-ver-sin-preguntar', 'Blog · Control',
+     'Los 5 números que un dueño debería ver sin preguntar', '#39C4A6'),
 ]
 
 ISOTIPO = '''<g><polygon points="36,50 8,22 8,39 19,50" fill="{a}"/><polygon points="36,50 8,78 8,61 19,50" fill="{b}"/></g>'''
