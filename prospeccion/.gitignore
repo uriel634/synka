@@ -1,0 +1,11 @@
+# Datos de prospección: NUNCA se publican (el repo es público y se sirve como sitio).
+leads/*
+correos/*
+reportes/*
+memoria/*
+PAUSA
+scripts/*.log
+!leads/.gitkeep
+!correos/.gitkeep
+!reportes/.gitkeep
+!memoria/.gitkeep
