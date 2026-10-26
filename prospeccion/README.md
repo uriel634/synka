@@ -12,3 +12,7 @@ Todo corre en TU computadora. Esta carpeta trae la configuración; los datos (`l
 7. Antes de enviar: dominio aparte con SPF/DKIM/DMARC, 5–10 correos/día al inicio, verificar rebotes < 2 %.
 
 Pausa, tope y apagado: ver `COMO-APAGARLO.md`.
+
+## Comandos
+- Playbook a mano (en orden): `/p1-entrevista` · `/p2-prueba10` · `/p3-leads50` · `/p4-enriquecer` · `/p5-calificar` · `/p6-correos` · `/p7-seguimientos` · `/p8-aprender`
+- Agente: `/ronda [ciudad o nicho]` · `/parte` · `/auditoria`
