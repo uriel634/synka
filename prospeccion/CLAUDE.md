@@ -14,7 +14,8 @@ Ver `perfil-cliente.md` (fuente de verdad para calificar y descartar).
 - Presupuesto mensual de créditos Apify: **5 USD** (plan gratis) — cámbialo si pagas plan
 - Tope por ronda: 1.5 USD
 - Ciudades en orden de ataque: [PENDIENTE: ciudades/estados objetivo]
-- Remitente: [PENDIENTE: correo y dominio de prospección separado del dominio principal]
+- Remitente: contacto.synka@gmail.com (cuenta Gmail gratuita dedicada a prospección; envío MANUAL por el humano).
+- Límite de envío: semana 1 máx 5 correos/día; después subir gradual hasta 10–20/día. Solo grado A/B con correo de confianza alta. Rebote > 2 % = parar y revisar. Al tener ingresos, migrar a correo con dominio propio (SPF/DKIM/DMARC).
 - Tono de correos: persona que escribe rápido y bien, español neutro de México, sin tono de agencia.
 
 ## Reglas que NUNCA se rompen
