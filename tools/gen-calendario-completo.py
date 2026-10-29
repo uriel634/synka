@@ -204,11 +204,35 @@ def desde_banco():
     return filas
 
 
+LI_SYNKA = 'LinkedIn (SYNKA)'
+
+
+def linkedin_de_synka(filas):
+    """Cada carrusel de Instagram de SYNKA se publica también en la página de empresa de LinkedIn (misma hora +
+    una hora; el enlace va en el primer comentario, con su propio UTM)."""
+    out = []
+    for r in filas:
+        if r['cuenta'] != IGS or 'Carrusel' not in r['formato']:
+            continue
+        texto = r['texto'].replace(HASH_IG, '').rstrip()
+        texto = re.sub(r'[Ee]nlace en la bio\.?', 'Enlace en el primer comentario.', texto)
+        texto += '\n\n#PyMEs #Empresarios #Liderazgo'
+        enlace = (r['enlace_con_utm'].replace('utm_source=instagram-synka', 'utm_source=linkedin')
+                  .replace('utm_medium=bio', 'utm_medium=social'))
+        enlace = re.sub(r'(utm_content=[^&]+)', r'\1-pagina', enlace)
+        out.append(dict(r, cuenta=LI_SYNKA, hora_cdmx='10:00', formato='Carrusel (PDF o imágenes)', texto=texto,
+                        enlace_con_utm=enlace, donde_va_el_enlace='primer comentario',
+                        nota='Publicar desde la página de empresa SYNKA, no desde el perfil personal. Subir las imágenes en orden '
+                             '(documento PDF o imágenes múltiples). Mismo carrusel que Instagram de SYNKA de ese día.'))
+    return out
+
+
 def main():
     with open(EXISTENTE, encoding='utf-8-sig', newline='') as fh:
         previas = list(csv.DictReader(fh))
     columnas = list(previas[0].keys())
     nuevas = desde_precalentamiento() + desde_banco()
+    nuevas += linkedin_de_synka(previas + nuevas)
     todas = previas + nuevas
     todas.sort(key=lambda r: (r['fecha'], r['hora_cdmx']))
     with open(SALIDA, 'w', encoding='utf-8-sig', newline='') as fh:

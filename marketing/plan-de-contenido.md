@@ -75,9 +75,10 @@ P4 queda en 0 % mientras no existan casos autorizados ni datos agregados suficie
 | Día | Pieza | Hora |
 |---|---|---|
 | Martes o miércoles | 1 carrusel en Instagram | 12:00 |
+| Mismo día | El **mismo carrusel** en la **página de empresa de SYNKA en LinkedIn** (el enlace en el primer comentario) | 10:00 |
 | Viernes | 1 publicación en el Perfil de Empresa en Google | 10:00 |
 | Cada 2 semanas (lunes) | 1 artículo del blog | — |
-| Cuando exista | Página de empresa en LinkedIn: comparte lo de Uriel | — |
+| Cuando convenga | Compartir desde la página de SYNKA lo mejor de Uriel (los posts que más conversación generen) | — |
 
 **Tiempo total:** ≈ 90 minutos de producción a la semana + 15 min diarios de comentarios. Detalle de herramientas en `automatizacion.md`.
 
