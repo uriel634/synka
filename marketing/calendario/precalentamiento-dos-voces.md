@@ -24,7 +24,7 @@ Regla de oro: el mismo día no publican la misma idea. Uriel cuenta, SYNKA orden
 
 - lun 26 oct 08:30 · LinkedIn (Uriel) · Texto · Por qué hablo de esto
 - mar 27 oct 08:30 · LinkedIn (Uriel) · Texto · El organigrama que importa
-- mié 28 oct 12:00 · Instagram SYNKA · Carrusel nuevo · Las seis áreas, una frase cada una
+- mié 28 oct 12:00 · Instagram SYNKA · Carrusel nuevo · Las 6 áreas que hacen que tu empresa funcione sin ti
 - jue 29 oct 08:30 · LinkedIn (Uriel) · Texto · Tres preguntas de la primera reunión
 - vie 30 oct 19:00 · Instagram Uriel · Reel (guion A) · Las tres preguntas
 - mar 3 nov 08:30 · LinkedIn (Uriel) · Texto · Cuánto cuesta que todo pase por ti
@@ -91,27 +91,27 @@ https://synka.mx/blog/senales-empresa-depende-del-dueno?utm_source=linkedin&utm_
 
 ## mié 28 oct · 12:00 · Instagram SYNKA · Carrusel nuevo
 
-**Las seis áreas, una frase cada una**
+**Las 6 áreas que hacen que tu empresa funcione sin ti**
 
 **Archivos:** `marketing/visuales/seis-areas/01.png` … `08.png` (8 imágenes, en orden). El texto de las láminas sale de `tools/gen-carruseles.py`.
 
 **Contenido de las láminas:**
 
 ```
-1. Una empresa que funciona sin su dueño en el centro se sostiene en seis áreas.
-2. Estructura: quién decide qué.
-3. Comercial: cómo se vende sin que todo pase por ti.
+1. Las 6 áreas que hacen que tu empresa funcione sin ti. Y cuál de ellas te está frenando.
+2. Estructura: quién decide qué, y hasta dónde.
+3. Comercial: vender sin que todo pase por ti.
 4. Procesos: cómo se hace cada cosa, escrito y repetible.
-5. Operación: que la entrega no dependa de quién esté ese día.
+5. Operación: que el servicio salga igual, sin importar quién lo haga.
 6. Personas: cada quien sabe qué se espera de él y cómo va.
 7. Control: números que ves sin tener que pedirlos.
-8. ¿En cuál se concentra tu dependencia? Radar SYNKA: 21 preguntas, 5 minutos, gratis. Enlace en la bio.
+8. ¿Cuál te está frenando? Radar SYNKA: 21 preguntas, 5 minutos, gratis. Enlace en la bio.
 ```
 
 **Texto:**
 
 ```
-Las seis áreas que sostienen una empresa que no depende de su dueño.
+Las 6 áreas que hacen que tu empresa funcione sin ti.
 
 Guarda este carrusel y marca cuál es hoy la más débil en la tuya.
 
